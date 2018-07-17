@@ -134,6 +134,19 @@
     background-color: rgba(177,189,250,0.2);
 }
 
+/*技术支持*/
+.ECLass_tech{
+    position: relative;
+}
+.tech_support{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    background: url(../images/底部技术支持.png) right center no-repeat;
+    background-size: 50%;
+}
+
 
 
 
