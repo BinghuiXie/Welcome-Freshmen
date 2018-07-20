@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
     <!--一定要把jQuery库放在bootstrap前面-->
+    <script src="fastclick/lib/fastclick.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/slide.js"></script>
 </head>
@@ -26,7 +28,7 @@
         <div class="welcome_content">
             <ul>
                 <li class="box1">
-                    <a href="javascript:void(0);" data-slide-to="1" data-target="#slideAnimate" class="slide1">
+                    <a href="javascript:void (0)" data-slide-to="1" data-target="#slideAnimate" class="slide1">
                         <p>南邮概况</p>
                         <img src="images/首页/南邮概况.png" height="85" width="337"/>
                     </a>
@@ -35,7 +37,8 @@
                     <a href="" data-slide-to="2" data-target="#slideAnimate" class="slide2">
                         <span class="common_bgColor bgColor"></span>
                         <p>新生导航</p>
-                        <img src="images/首页/新生导航.jpg"/>
+                        <img src="
+                        images/首页/新生导航.jpg"/>
                     </a>
                 </li>
                 <li class="box2">
@@ -75,11 +78,9 @@
             </ul>
         </div>
     </div>
-
     <!--南邮概况-->
     <!--轮播切换序号11-20表示南邮概况部分-->
-    <div class="overview_njupt " data-slide-to="11" data-target="#slideAnimate">
-
+    <div class="overview_njupt hidden" data-slide-to="11" data-target="#slideAnimate">
         <header class="headerBar">
             <!--返回小三角-->
             <div class="overview_icon back1" data-slide-to="12" data-target="#slideAnimate"></div>
@@ -87,7 +88,7 @@
         </header>
         <div class="overview_Content height1">
             <ul class="clearfix">
-                <li class="overview1"><a href="" data-slide-to="13" data-target="#slideAnimate"><img src="images/南邮概况/学校简介.jpeg" height="249" width="246"/><p>学校简介</p></a></li>
+                <li class="overview1"><a href="javascript:void(0);" data-slide-to="13" data-target="#slideAnimate"><img src="images/南邮概况/学校简介.jpeg" height="249" width="246"/><p>学校简介</p></a></li>
                 <li class="overview2"><a href="" data-slide-to="14" data-target="#slideAnimate"><img src="images/南邮概况/学校章程.jpeg"/><p>学校章程</p></a></li>
                 <li class="overview3"><a href="" data-slide-to="15" data-target="#slideAnimate"><img src="images/南邮概况/南邮校史.jpeg" height="150" width="150"/><p>南邮校史</p></a></li>
                 <li class="overview4"><a href="" data-slide-to="16" data-target="#slideAnimate"><img src="images/南邮概况/现任领导.jpeg"/><p>现任领导</p></a></li>
@@ -98,9 +99,9 @@
     </div>
 
     <!--南邮概况 - 学校简介-->
-    <div class="college_intro ">
+    <div class="college_intro hidden">
         <header class="headerBar">
-            <div class="overview_icon"></div>
+            <div class="overview_icon test"><a href="javascript:void(0);" class=""></a></div>
             <h3 class="overview_title">学校简介</h3>
             <span class="line"></span>
         </header>
@@ -193,7 +194,7 @@
     </div>
 
     <!--南邮概况 - 学校章程-->
-    <div class="college_rule ">
+    <div class="college_rule hidden">
         <header class="headRule">
             <div class="backRule"></div>
             <h3 class="titleRule">学校章程</h3>
@@ -204,7 +205,7 @@
         </div>
     </div>
     <!--南邮概况 - 南邮校史-->
-    <div class="college_history ">
+    <div class="college_history hidden">
         <header class="headRule">
             <div class="backRule"></div>
             <h3 class="titleRule">学校章程</h3>
@@ -217,7 +218,7 @@
         </div>
     </div>
     <!--南邮概况 - 现任领导-->
-    <div class="now_leader ">
+    <div class="now_leader hidden">
         <header class="headerBar">
             <div class="overview_icon"></div>
             <h3 class="overview_title">现任领导</h3>
@@ -225,24 +226,24 @@
 
         <div class="leader_Content">
             <ul class="clearfix">
-                <li class="overview1"><a href=""><img src="images/现任领导/刘陈.jpeg" /><p>党委书记 刘陈</p></a></li>
-                <li class="overview2"><a href=""><img src="images/现任领导/杨震.jpeg" /><p>校长 杨震</p></a></li>
-                <li class="overview3"><a href=""><img src="images/现任领导/王承宽.jpeg" ><p>党委常委、副校长 <br>王承宽</p></a></li>
-                <li class="overview4"><a href=""><img src="images/现任领导/王国平.jpeg" /><p>党委常委、副校长 <br>王国平</p></a></li>
-                <li class="overview5"><a href=""><img src="images/现任领导/王宗荣.jpeg" /><p>党委常委、副校长 <br>王宗荣</p></a></li>
-                <li class="overview6"><a href=""><img src="images/现任领导/蒋国平.jpeg" /><p>党委常委、副校长 <br>蒋国平</p></a></li>
-                <li class="overview7"><a href=""><img src="images/现任领导/张志华.jpeg" /><p>党委常委、副校长 <br>张志华</p></a></li>
-                <li class="overview8"><a href=""><img src="images/现任领导/周南平.jpeg" /><p>党委常委、副校长 <br>周南平</p></a></li>
-                <li class="overview9"><a href=""><img src="images/现任领导/李子全.jpeg" /><p>党委常委、纪委书记 李子全 </p></a></li>
-                <li class="overview10"><a href=""><img src="images/现任领导/汪联辉.jpeg"/><p>副校长 汪联辉</p></a></li>
+                <li class="overview1"><a href=""><img src="images/南邮概况/现任领导/刘陈.jpeg" /><p>党委书记 刘陈</p></a></li>
+                <li class="overview2"><a href=""><img src="images/南邮概况/现任领导/杨震.jpeg" /><p>校长 杨震</p></a></li>
+                <li class="overview3"><a href=""><img src="images/南邮概况/现任领导/王承宽.jpeg" ><p>党委常委、副校长 <br>王承宽</p></a></li>
+                <li class="overview4"><a href=""><img src="images/南邮概况/现任领导/王国平.jpeg" /><p>党委常委、副校长 <br>王国平</p></a></li>
+                <li class="overview5"><a href=""><img src="images/南邮概况/现任领导/王宗荣.jpeg" /><p>党委常委、副校长 <br>王宗荣</p></a></li>
+                <li class="overview6"><a href=""><img src="images/南邮概况/现任领导/蒋国平.jpeg" /><p>党委常委、副校长 <br>蒋国平</p></a></li>
+                <li class="overview7"><a href=""><img src="images/南邮概况/现任领导/张志华.jpeg" /><p>党委常委、副校长 <br>张志华</p></a></li>
+                <li class="overview8"><a href=""><img src="images/南邮概况/现任领导/周南平.jpeg" /><p>党委常委、副校长 <br>周南平</p></a></li>
+                <li class="overview9"><a href=""><img src="images/南邮概况/现任领导/李子全.jpeg" /><p>党委常委、纪委书记 李子全 </p></a></li>
+                <li class="overview10"><a href=""><img src="images/南邮概况/现任领导/汪联辉.jpeg"/><p>副校长 汪联辉</p></a></li>
             </ul>
         </div>
     </div>
     <!--刘陈-->
-    <div class="leaders ">
+    <div class="leaders hidden">
         <div class="liuchen ">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/刘陈/刘陈.jpeg" height="267" width="400"/>
+            <img src="images/南邮概况/现任领导/刘陈/刘陈.jpeg" height="267" width="400"/>
             <h3>南京邮电大学党委书记&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刘陈</h3>
             <h4>教授 博士生导师</h4>
             <p>男，汉族，1963年生，江苏南通人。江苏省第十三次党代表大会代表；江苏省第十一、十二届政协委员，江苏省第十二届政协科学技术委员会副主任。1985年毕业于南京工学院（现东南大学）无线电系无线电技术专业并获工学学士学位，1988年毕业于安徽大学电路、信号与系统专业，获工学硕士学位，2005年毕业于东南大学信号与信息处理专业，获工学博士学位。1988年进入南京邮电大学任教，2002年晋升教授，1997年6月起先后担任教务处副处长、处长、高等教育研究所所长（兼），2007年7月任南京邮电大学副校长，2012年7月任南京邮电大学党委书记。</p>
@@ -252,7 +253,7 @@
         <!--杨震-->
         <div class="yangzhen ">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/杨震/杨震.jpeg" height="267" width="400"/>
+            <img src="images/南邮概况/现任领导/杨震/杨震.jpeg" height="267" width="400"/>
             <h3>南京邮电大学校长&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杨震</h3>
             <h3>教授，博士生导师</h3>
             <h3>第十、十一、十二、十三届全国人大代表，</h3>
@@ -266,7 +267,7 @@
         <!--王成宽-->
         <div class="wangchengkuan imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/王承宽/王承宽.jpeg" height="277" width="200"/>
+            <img src="images/南邮概况/现任领导/王承宽/王承宽.jpeg" height="277" width="200"/>
             <h3>南京邮电大学党委常委、副校长&nbsp;&nbsp;&nbsp;&nbsp;王承宽</h3>
             <h3>研究员</h3>
             <p>男，汉族，1958年8月出生，江苏沛县人，中共党员，博士，研究员。</p>
@@ -278,7 +279,7 @@
         <!--王国平-->
         <div class="wangguoping imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/王国平/王国平.jpeg" height="272" width="200"/>
+            <img src="images/南邮概况/现任领导/王国平/王国平.jpeg" height="272" width="200"/>
             <h3>南京邮电大学党委常委、副校长 王国平</h3>
             <h3>研究员、硕士生导师</h3>
             <p>男，汉族，1961年11月出生，江苏扬中人；中共党员，法学硕士，研究员、硕士生导师。1981年1月南京师范学院化学专科班毕业，1990年11月徐州师范学院政教本科专业毕业，后于河海大学国际工商学院在职进修管理科学与工程研究生课程，南京工业大学法律与行政学院在职攻读思想政治教育专业硕士研究生，获法学硕士学位。2009年6月赴美国加州大学Fullerton 分校进修；2012年2月至7月受“江苏省首批高校校长境外跟岗研修计划”的资助，在香港理工大学跟岗培训。</p>
@@ -289,7 +290,7 @@
         <!--王宗荣-->
         <div class="wangzongrong imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/王宗荣/王宗荣.jpeg" height="626" width="425"/>
+            <img src="images/南邮概况/现任领导/王宗荣/王宗荣.jpeg" height="626" width="425"/>
             <h3>南京邮电大学党委常委、副校长  王宗荣</h3>
             <h3>研究员、博士生导师</h3>
             <p>男，汉族，1962年出生，山西省寿阳县人。中共党员，博士，研究员，博士生导师。</p>
@@ -299,7 +300,7 @@
         <!--蒋国平-->
         <div class="jiangguoping imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/蒋国平/蒋国平.jpeg" height="297" width="200"/>
+            <img src="images/南邮概况/现任领导/蒋国平/蒋国平.jpeg" height="297" width="200"/>
             <h3>南京邮电大学党委常委、副校长　蒋国平</h3>
             <h3>教授、博士生导师</h3>
             <p>男，江苏扬中人，1966年8月18日生，汉族，中共党员。博士、教授、博士生导师。1988年本科毕业于河海大学电力系自动化专业，获工学学士学位，1988年至1992年留校任教，1992年考入东南大学自动化研究所，攻读硕士学位，1994年被推荐提前攻读博士学位，1997年毕业，获得自动控制理论与应用博士学位。1997年加入南京邮电学院电子工程系，担任讲师；1999年晋升副教授，同年底任硕士生导师；2003年破格晋升教授，2006年任博士生导师。</p>
@@ -310,7 +311,7 @@
         <!--张志华-->
         <div class="imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/张志华/张志华.jpeg" height="290" width="200"/>
+            <img src="images/南邮概况/现任领导/张志华/张志华.jpeg" height="290" width="200"/>
             <h3>南京邮电大学党委常委、副校长　张志华</h3>
             <h3>教授、硕士生导师</h3>
             <p>男，1970年7月，四川大竹人，中共党员，博士，教授，硕士生导师。1993年毕业于华东师范大学，获理学学士；2000年获河海大学管理学第二学士学位；2005年获南京师范大学法学硕士学位；2018年获河海大学管理学博士学位。先后任南京邮电大学辅导员、团委副书记、书记、学生处处长、学工部部长、招生就业指导办公室主任、后勤管理处处长、省科技镇长团团长、昆山市副市长（挂职）、南京邮电大学科技产业发展中心主任、大学科技园管委会办公室主任、资产经营公司总经理等职。2012年6月任南京邮电大学党委常委、副校长。</p>
@@ -319,7 +320,7 @@
         <!--周南平-->
         <div class="imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/周南平/周南平.jpeg" height="296" width="200"/>
+            <img src="images/南邮概况/现任领导/周南平/周南平.jpeg" height="296" width="200"/>
             <h3>南京邮电大学党委常委、副校长　周南平 </h3>
             <h3>研究员、硕士生导师</h3>
             <p>男，1964年9月出生，江苏宜兴人，中共党员。南京邮电大学通信工程专业，工学学士学位；上海交通大学思想政治教育专业，法学第二学士学位；中共江苏省委党校行政管理专业，研究生学历。</p>
@@ -329,7 +330,7 @@
         <!--李子全-->
         <div class="imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/李子全/李子全.jpeg" height="614" width="425"/>
+            <img src="images/南邮概况/现任领导/李子全/李子全.jpeg" height="614" width="425"/>
             <h3>南京邮电大学党委常委、纪委书记 李子全</h3>
             <h3>博士、教授、博士生导师</h3>
             <p>男，汉族，1964年2月生，四川梓潼人，中共党员。1985年7月本科毕业于甘肃工业大学（现兰州理工大学）铸造专业，获工学学士学位；1988年7月硕士毕业于甘肃工业大学铸造专业，获北京科技大学工学硕士学位；1998年7月博士毕业于东南大学铸造专业，获工学博士学位。1989年9月-1990年2月在清华大学机械系进修兼助教，2004年5月-9月在英国伯明翰大学冶金与材料系访问学者。</p>
@@ -339,7 +340,7 @@
         <!--汪联辉-->
         <div class="imgBox2">
             <header class="leaderBack"></header>
-            <img src="images/现任领导/汪联辉/汪联辉.jpeg" height="413" width="295"/>
+            <img src="images/南邮概况/现任领导/汪联辉/汪联辉.jpeg" height="413" width="295"/>
             <h3>南京邮电大学副校长　汪联辉</h3>
             <h3><p>教授、博士生导师</p></h3>
             <p>男，1964年12月出生于福建安溪县。1988年毕业于成都科技大学高分子材料系，1993年获福建师范大学高分子化学与物理专业硕士学位，1998年获浙江大学高分子化学与物理专业博士学位。1988-2005年在福建师范大学任教，历任助理研究员、副研究员、研究员、副所长，期间1998-2005年赴新加坡国立大学从事研究工作，任博士后研究员、助理教授。2005年回国受聘复旦大学，任复旦大学先进材料实验室教授。2010年底至今南京邮电大学任教，先后任材料科学与工程学院院长、研究生院常务副院长并兼任南京邮电大学学术委员会主任，“长江学者”特聘教授。2017年4月任南京邮电大学副校长。</p>
@@ -349,7 +350,7 @@
 
     </div>
     <!--南邮概况 - 电子地图-->
-    <div class="electronicMap ">
+    <div class="electronicMap hidden">
         <header class="headerBar">
             <div class="overview_icon"></div>
             <h3 class="overview_title">电子地图</h3>
@@ -364,21 +365,21 @@
         </div>
     </div>
     <!--电子地图 - 仙林校区-->
-    <div class="xianlin_map imgBox3 ">
+    <div class="xianlin_map imgBox3 hidden">
         <img src="images/南邮概况/电子地图/仙林校区/仙林校区.jpeg"/>
     </div>
     <!--电子地图 - 三牌楼校区-->
-    <div class="san_map imgBox3 ">
+    <div class="san_map imgBox3 hidden">
         <img src="images/南邮概况/电子地图/三牌楼/三牌楼校区.jpeg"/>
     </div>
     <!--电子地图 - 锁金村校区-->
-    <div class="suo_map imgBox3 ">
+    <div class="suo_map imgBox3 hidden">
         <img src="images/南邮概况/电子地图/锁金村/锁金村校区.jpeg"/>
     </div>
     <!--南邮概况 - 360°南邮全景地图-->
 
     <!--新生导航-->
-    <div class="Guide_system ">
+    <div class="Guide_system hidden">
         <header class="headerBar headColor">
             <div class="overview_white_icon"></div>
             <h3>新生导航</h3>
@@ -427,7 +428,7 @@
     </div>
 
     <!--新生导航 - 报到流程-->
-    <div class="register_procedure imgBox3 ">
+    <div class="register_procedure imgBox3 hidden">
         <header class="headerBar headColor">
             <div class="overview_white_icon"></div>
             <h3>报到流程</h3>
@@ -435,7 +436,7 @@
         <img src="images/新生导航/报道流程/报道流程.png" height="666" width="448"/>
     </div>
     <!--新生导航 - 新生报道推荐单-->
-    <div class="register_list imgBox3 ">
+    <div class="register_list imgBox3 hidden">
         <header class="headerBar headColor">
             <div class="overview_white_icon"></div>
             <h3>新生报道推荐单</h3>
@@ -443,7 +444,7 @@
         <img src="images/新生导航/必备清单/必备清单.png"/>
     </div>
     <!--新生导航 - 学长学姐建议-->
-    <div class="suggestion imgBox3 ">
+    <div class="suggestion imgBox3 hidden">
         <header class="headerBar headColor">
             <div class="overview_white_icon"></div>
             <h3>学长学姐建议</h3>
@@ -452,7 +453,7 @@
         <img src="images/新生导航/建议/底部图.jpeg" height="385" width="580"/>
     </div>
     <!--新生导航 - 入学小贴士-->
-    <div class="register_tips imgBox3 ">
+    <div class="register_tips imgBox3 hidden">
         <header class="headerBar headColor">
             <div class="overview_white_icon"></div>
             <h3>入学小贴士</h3>
@@ -460,7 +461,7 @@
         <img src="images/新生导航/入学小贴士/入学小贴士.png"/>
     </div>
     <!--院系概览-->
-    <div class="overviewMajor  ">
+    <div class="overviewMajor hidden">
         <header class="headerMajor">
             <span class="homeMenu"><img src="images/院系概览/home142.png" height="512" width="512"/></span>
             <div class="NJUPT">
@@ -500,7 +501,7 @@
         </div>
     </div>
     <!--生活攻略-->
-    <div class="life_hint  ">
+    <div class="life_hint hidden">
         <header class="life_header">
             <span class="life_icon"></span>
             <span class="life_title">
@@ -559,7 +560,7 @@
     <!--社团初探-->
 
     <!--技能学习-->
-    <div class="skill_learn ">
+    <div class="skill_learn hidden">
         <header class="skill_header">
             <span class="skill_icon"></span>
             <div class="learnSkills">
@@ -604,4 +605,6 @@
 
 </div>
 </body>
+
+
 </html>
