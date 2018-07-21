@@ -4,8 +4,26 @@
     min-width: 320px;
     max-width: 640px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
+.freshman_zone{
+    width: 100%;
+    cursor: pointer;
+}
+.slide1{cursor: pointer}
+.slide2{cursor: pointer}
+.slide3{cursor: pointer}
+.slide4{cursor: pointer}
+.slide5{cursor: pointer}
+.slide6{cursor: pointer}
+.slide7{cursor: pointer}
+.overview1{cursor: pointer}
+.overview2{cursor: pointer}
+.overview3{cursor: pointer}
+.overview4{cursor: pointer}
+.overview5{cursor: pointer}
+.overview6{cursor: pointer}
 .top_welcome_NJUPT{
     width: 100%;
     position: fixed;
@@ -129,6 +147,7 @@
 }
 .bgColor5{
     background-color: rgba(177,189,250,0.1);
+    cursor: pointer;
 }
 .bgColor5:hover{
     background-color: rgba(177,189,250,0.2);
@@ -227,6 +246,7 @@
 /*南邮概况 - 学校简介*/
 .college_intro .content{
     padding: 0 15px;
+    cursor: pointer;
 }
 .college_intro p{
     text-indent: 2em;
@@ -238,6 +258,7 @@
     min-width: 320px;
     max-width: 640px;
     margin: 0 auto;
+    cursor: pointer;
 }
 .leader_Content{
     width: 100%;
@@ -273,6 +294,7 @@
 /*电子地图*/
 .electronicMap ul li p{
     font-size: 20px;
+    cursor: pointer;
 }
 .bgColor5{
     background-color: rgba(63,81,181,0.4);
@@ -284,6 +306,7 @@
 .bgColor6{
     background-color: rgba(83,181,63,0.3);
     /*border-radius: 25px;*/
+    cursor: pointer;
 }
 .bgColor6:hover{
     background-color: rgba(83,181,63,0.4);
@@ -296,9 +319,17 @@
 .bgColor7:hover{
     background-color: rgba(159,63,181,0.33);
     /*border-radius: 25px;*/
+    cursor: pointer;
 }
-.xianlin_map,.san_map.suo_map{
+.xianlin_map,.san_map,.suo_map{
     width: 100%;
+    cursor: pointer;
+}
+.san_map{
+    cursor: pointer;
+}
+.suo_map{
+    cursor: pointer;
 }
 .imgBox3 img{
     width: 90%;
@@ -873,6 +904,7 @@
 /*学校章程*/
 .college_rule{
     width: 100%;
+    cursor: pointer;
 }
 .headRule{
     width: 100%;
@@ -911,6 +943,7 @@
 /*南邮校史*/
 .college_history{
     width: 100%;
+    cursor: pointer;
 }
 .history_content{
     width: 100%;
@@ -926,9 +959,11 @@
 /*刘陈*/
 .liuchen{
     width: 100%;
+    cursor: pointer;
 }
 .leaders{
     width: 100%;
+    cursor: pointer;
 }
 .leaderBack{
     width: 100%;
@@ -955,13 +990,29 @@
 /*杨震*/
 .yangzhen{
     width: 100%;
+    cursor: pointer;
 }
 /*王成宽*/
 .wangchengkuan{
     width: 100%;
+    cursor: pointer;
+}
+.zhangzhihua{
+    width: 100%;
+    cursor: pointer;
+}
+.zhounanping{
+    cursor: pointer;
 }
 .wangzongrong{
     width: 100%;
+    cursor: pointer;
+}
+.liziquan{
+    cursor: pointer;
+}
+.wanglianhui{
+    cursor: pointer;
 }
 .imgBox2 img{
     display: block;
@@ -971,10 +1022,22 @@
 }
 .wangguoping{
     width: 100%;
+    cursor: pointer;
 }
 .jiangguoping{
     width: 100%;
+    cursor: pointer;
 }
+.leader1{cursor: pointer}
+.leader2{cursor: pointer}
+.leader3{cursor: pointer}
+.leader4{cursor: pointer}
+.leader5{cursor: pointer}
+.leader6{cursor: pointer}
+.leader7{cursor: pointer}
+.leader8{cursor: pointer}
+.leader9{cursor: pointer}
+.leader10{cursor: pointer}
 
 
 /**/

@@ -38,8 +38,6 @@ $(function () {
     PageJump(overview,overview3,college3);
     PageJump(overview,overview4,college4);
     PageJump(overview,overview5,college5);
-    /*获取领导们对应的class*/
-    var leader = $(".now_leader");
     /*领导介绍列表*/
     var leader1,leader2,leader3,leader4,leader5,leader6,leader7,leader8,leader9,leader10,
     leader1 = $(".leader1");
@@ -63,16 +61,16 @@ $(function () {
     var znp = $(".zhounanping");/*周南平*/
     var lzq = $(".liziquan");/*李子全*/
     var wlh = $(".wanglianhui");/*汪联辉*/
-    PageJump(leader,leader1,liuchen);
-    PageJump(leader,leader2,yangzhen);
-    PageJump(leader,leader3,wck);
-    PageJump(leader,leader4,wgp);
-    PageJump(leader,leader5,wzr);
-    PageJump(leader,leader6,jgp);
-    PageJump(leader,leader7,zzh);
-    PageJump(leader,leader8,znp);
-    PageJump(leader,leader9,lzq);
-    PageJump(leader,leader10,wlh);
+    PageJump(college4,leader1,liuchen);
+    PageJump(college4,leader2,yangzhen);
+    PageJump(college4,leader3,wck);
+    PageJump(college4,leader4,wgp);
+    PageJump(college4,leader5,wzr);
+    PageJump(college4,leader6,jgp);
+    PageJump(college4,leader7,zzh);
+    PageJump(college4,leader8,znp);
+    PageJump(college4,leader9,lzq);
+    PageJump(college4,leader10,wlh);
     /*南邮概况 - 电子地图内容*/
     var xianlin_map = $(".xianlin_map");
     var san_map = $(".san_map");
