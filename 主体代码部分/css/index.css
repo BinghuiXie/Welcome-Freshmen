@@ -70,6 +70,7 @@
     color: #FFFFFF;
 }
 .welcome_content .box1 p{
+    text-align: left;
     height: 33px;
     line-height: 33px;
 }
@@ -101,9 +102,9 @@
     border-radius: 10px;
     position: absolute;
 }
- .box2{
+.box2{
     width: 100%;
-     padding: 0 15px;
+    padding: 0 15px;
 }
  .box2 a{
      display: block;
@@ -126,7 +127,6 @@
 .box2 a img{
     width: 100%;
     border-radius: 10px;
-    /*opacity: 0.8;*/
 }
 .bgColor1{
     background-color: rgba(155,181,174,0.4);
@@ -569,7 +569,7 @@
     height: 100vh;
     width: 100%;
     background: url(../images/新生导航/背景图.jpeg) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100vh;
 }
 .headColor{
     background-color: #243D99;
@@ -1040,31 +1040,799 @@
 .leader10{cursor: pointer}
 
 
-/**/
-/**/
-/**/
-/**/
+/*军训攻略*/
+.military_training{
+    width: 100%;
+}
+.military_training header{
+    width: 100%;
+    background-color: #243D99;
+    height: 60px;
+}
+.military_training h3{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    text-indent: -3em;
+}
+.militaryBar{
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: url(../images/南邮概况/arrowhead7_01.png) left 15px center no-repeat;
+    background-size: 16px 16px;
+    margin-top: 5px;
+}
+.militaryImg{
+    width: 100%;
+}
+.militaryImg img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/*技能学习 - 语言入门*/
+/*C语言*/
+.learnC{
+    width: 100%;
+}
+.skillHeader{
+    width: 100%;
+    height: 45px;
+    background: url(../images/南邮概况/arrowhead7_01.png) left 10px center no-repeat #1D7AD9;
+    background-size: 24px 24px;
+    float: left;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 10px;
+}
+.learnC img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
+/*C++的入门*/
+.learnCPP{
+    width: 100%;
+}
+.learnCPP h3{
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px 0;
+}
+.middleLearn{
+    width: 100%;
+    height: 60px;
+}
+.middleLearn .EClassTech{
+    display: block;
+    text-align: left;
+    padding: 15px;
+}
+.iconBear{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url(../images/技能学习/超人熊.png) left 15px center no-repeat;
+    background-size: 36px 36px;
+}
+.learnCPP_content p{
+     text-indent: 2em;
+     display: block;
+     width: 100%;
+     font-size: 13px;
+     line-height: 25px;
+     padding:  0 5px;
+ }
+.learnCPP_content ul{
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.learnCPP_content ul li{
+    width: 100%;
+    font-size: 13px;
+}
+/*Java学习*/
+.learnJava{
+    width: 100%;
+}
+.learnJava h3{
+    text-align: center;
+    font-weight: normal;
+}
+.learnJava_content p{
+    width: 100%;
+    font-size: 13px;
+    text-indent: 2em;
+    padding: 0 10px;
+}
+.learnJava_content li{
+    width: 100%;
+    font-size: 13px;
+    padding: 0 10px;
+}
+.learnJava_content a:hover{
+    color: #243D99;
+    border-bottom: 1px solid #243D99;
+}
+.learnJava_content ul{
+    margin-bottom: 5vh;
+}
 
+/*Python学习*/
+.learnPython{
+    width: 100%;
+}
+.learnPython_content{
+    width: 100%;
+}
+.learnPython h3{
+    text-align: center;
+    font-weight: normal;
+}
+.learnPython_content p{
+    width: 100%;
+    text-indent: 2em;
+    padding: 0 10px;
+    line-height: 30px;
+}
+.learnPython_content ul{
+    width: 100%;
+}
+.learnPython_content ul a:hover{
+    color: #243D99;
+    border-bottom: 1px solid #243D99;
+}
+.learnPython_content ul li{
+    width: 100%;
+    padding: 0 10px;
+}
 
+/*前端学习*/
+.learnUI{
+    width: 100%;
+}
+.learnUI h3{
+    text-align: center;
+    font-weight: normal;
+}
+.learnUI_content p{
+    width: 100%;
+    padding: 0 10px;
+    text-indent: 2em;
+}
+.learnUI_content{
+    width: 100%;
+}
+.learnUI_content ul{
+    width: 100%;
+}
+.learnUI_content ul li{
+    width: 100%;
+    padding: 0 10px;
+}
+.learnUI_content a:hover{
+    color: #243D99;
+    border-bottom: 1px solid #243D99;
+}
 
+/*设计学习*/
+.learnDesign{
+    width: 100%;
+}
+.learnDesign h3{
+    text-align: center;
+    font-weight: normal;
+}
+.learnDesign_content{
+    width: 100%;
+}
+.learnDesign_content p{
+    text-indent: 2em;
+    width: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.learnDesign_content ul{
+    width: 100%;
+    margin: 10px 0;
+}
+.learnDesign_content ul li{
+    width: 100%;
+}
+.learnDesign_content a:hover{
+    color: #243D99;
+    border-bottom: 1px solid #243D99;
+}
 
+/*生活攻略内容*/
+/*衣在南邮*/
+.cloth{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/生活攻略/衣在南邮/背景图.jpeg) no-repeat;
+    background-size: 100% 100vh;
+}
+.clothHeader{
+    width: 100%;
+    height: 10vh;
+    background-color: #243D99;
+    padding: 6px;
+    position: relative;
+}
+.clothHeader .backIcon{
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/南邮概况/arrowhead7_01.png) left center no-repeat;
+    background-size: 20px 20px;
+    color: #ffffff;
+}
+.clothHeader .backIcon span{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.clothHeader .clothIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/衣在南邮/南京天气.png) right center no-repeat;
+    background-size: 40px 40px;
+    right:10px;
+    top: 6px;
+}
+.clothHeader h3{
+    width: 100%;
+    padding: 10px 50px;
+    text-align: center;
+    color: #ffffff;
+}
+.cloth_content {
+    width: 100%;
+}
+.cloth_content .weather{
+    width: 100%;
+    margin-top: 10vh;
+    height: 10vh;
+}
+.cloth_content .weather span{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: url(../images/生活攻略/衣在南邮/南邮校徽.jpeg) left center no-repeat;
+    background-size: 50px 50px;
+    margin:  10px 0 0 5px;
+}
+.cloth_content .weather a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../images/生活攻略/衣在南邮/对话框_01.png) left 60px center no-repeat;
+    background-size: 205px 100px;
+}
+.cloth_content .shopping{
+    width: 100%;
+    margin-top: 15vh;
+}
+.cloth_content .shopping span {
+    width: 50px;
+    height: 50px;
+    float: right;
+    background: url(../images/生活攻略/衣在南邮/南邮校徽.jpeg) right center no-repeat;
+    background-size: 50px 50px;
+    margin-right: 5px;
+}
+.cloth_content .shopping a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../images/生活攻略/衣在南邮/对话框_02.png) right 60px center no-repeat;
+    background-size: 205px 100px;
+}
+/*南京天气*/
+.weatherOFnj{
+    width: 100%;
+}
+.weather_content{
+    width: 100%;
+}
+.weather_content ul{
+    width: 100%;
+}
+.weather_content ul li{
+    width: 100%;
+}
+.weather_content ul li img{
+    width: 100%;
+}
 
+/*周围商区*/
+.shops{
+    width: 100%;
+    position: relative;
+}
+.shopIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/衣在南邮/周围商区/周围商区.png) right center no-repeat;
+    background-size: 40px 40px;
+    right:10px;
+    top: 10px;
+}
+.shops img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/*食在南邮*/
+.food{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/生活攻略/食在南邮/背景图.jpeg) center no-repeat;
+    background-size: 100% 100%;
+}
+.foodIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/食在南邮/食在南邮.png) right center no-repeat;
+    background-size: 40px 40px;
+    right:10px;
+    top: 10px;
+}
+.food_content{
+    width: 100%;
+}
+.canteen{
+    width: 100%;
+    margin-top: 12vh;
+}
+.canteen span{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: url(../images/生活攻略/食在南邮/南邮校徽.jpeg) left center no-repeat;
+    background-size: 50px 50px;
+    margin-left: 5px;
+}
+.canteen a{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../images/生活攻略/食在南邮/对话框_03.png) left 55px center no-repeat;
+    background-size: 200px 98px;
+}
+.delicious{
+    width: 100%;
+    margin-top: 10vh;
+}
+.delicious span{
+    width: 50px;
+    height: 50px;
+    float: right;
+    background: url(../images/生活攻略/食在南邮/南邮校徽.jpeg) right center no-repeat;
+    background-size: 50px 50px;
+    margin-right: 5px;
+}
+.delicious a {
+    display: block;
+    width: 100%;
+    /*固定高度*/
+    height: 100px;
+    background: url(../images/生活攻略/食在南邮/对话框_04.png) right 55px center no-repeat;
+    background-size: 200px 98px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.deliciousIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/食在南邮/周边美食.png) right center no-repeat;
+    background-size: 40px 40px;
+    right:10px;
+    top: 10px;
+}
+.delicious_content{
+    width: 100%;
+}
+.delicious_content ul{
+    width: 100%;
+}
+.delicious_content ul li{
+    width: 100%;
+}
+.delicious_content ul li img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/*食堂介绍*/
+.IntroCanteen {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.IntroCanteen img {
+    width: 100%;
+}
+.IntroCanteen .canteenIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/食在南邮/食堂介绍/食堂介绍.png) right center no-repeat;
+    background-size: 40px 40px;
+    right:10px;
+    top: 10px;
+}
+.bottomChoice{
+    width: 100%;
+    background-color: #243D99;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+.bottomChoice ul{
+    width: 100%;
+ }
+.bottomChoice ul li{
+    width: 50%;
+    float: left;
+}
+.bottomChoice ul li p{
+    color: #ffffff;
+    height: 60px;
+    line-height: 100px;
+    text-align: center;
+}
+/*住在南邮*/
+.liveNJUPT{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/生活攻略/住在南邮/背景图.jpeg) center no-repeat;
+    background-size: 100% 100%;
+}
+.liveNJUPT .liveIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/住在南邮/住在南邮.png) right center no-repeat;
+    background-size: 40px 40px;
+    right:10px;
+    top: 10px;
+}
+.live_content{
+    width: 100%;
+}
+.dormitory{
+    width: 100%;
+    margin-top: 12vh;
+}
+.dormitory span{
+    width: 55px;
+    height: 55px;
+    float: left;
+    background: url(../images/生活攻略/住在南邮/南邮校徽.jpeg) left center no-repeat;
+    background-size: 55px 55px;
+    margin-left: 5px;
+}
+.dormitory a{
+    display: block;
+    width: 100%;
+    /*固定高度*/
+    height: 100px;
+    background: url(../images/生活攻略/住在南邮/对话框_05.png) left 60px center no-repeat;
+    background-size: 205px 100px;
+}
+.campus_safe{
+    width: 100%;
+    margin-top: 10vh;
+}
+.campus_safe span{
+    width: 55px;
+    height: 55px;
+    float: right;
+    background: url(../images/生活攻略/住在南邮/南邮校徽.jpeg) right center no-repeat;
+    background-size: 55px 55px;
+    margin-right: 5px;
+}
+.campus_safe a{
+    display: block;
+    width: 100%;
+    /*固定高度*/
+    height: 100px;
+    background: url(../images/生活攻略/住在南邮/对话框_06.png) right 60px center no-repeat;
+    background-size: 205px 100px;
+}
+/*宿舍介绍*/
+.IntroDormitory{
+    width: 100%;
+    position: relative;
+}
+.dormitoryIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/住在南邮/宿舍介绍/宿舍介绍.png) center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.IntroDormitory img{
+    width: 100%;
+    display: block;
+    margin-bottom: 8vh;
+}
+/*校园安全*/
+.safety{
+    width: 100%;
+}
+.safetyIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/住在南邮/校园安全/校园安全.png) center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.safety img{
+    width: 100%;
+    margin-bottom: 10vh;
+}
+/*行在南邮*/
+.walk{
+    width: 100%;
+    height: 100vh;
+}
+.walkIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/行在南邮/行在南邮.png)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.walk_content{
+    width: 100%;
+    height: 90vh;
+    background: url(../images/生活攻略/行在南邮/背景图.jpeg) no-repeat;
+    background-size: 100% 90vh;
+}
+.walk_content a{
+    display: block;
+    /*width: 100%;*/
+    height: 100px;
+}
+.walk_content a.leftLinkPos{
+    margin-left: 58px;
+    margin-top:4px;
+}
+.walk_content a.rightLinkPos{
+    margin-right: 65px;
+}
+.walk_content span.leftFloatIcon{
+    width: 51px;
+    height: 51px;
+    background: url(../images/生活攻略/住在南邮/南邮校徽.jpeg) left center no-repeat;
+    float: left;
+    background-size: 50px 50px;
+    margin-left: 5px;
+}
+.walk_content span.rightFloatIcon{
+    width: 51px;
+    height: 51px;
+    background: url(../images/生活攻略/住在南邮/南邮校徽.jpeg) right center no-repeat;
+    float: right;
+    background-size: 50px 50px;
+    margin-right: 5px;
+}
+.laoxiang{
+    padding-top: 8vh;
+}
+.laoxiang a{
+    background: url(../images/生活攻略/行在南邮/对话框_07.png) left center no-repeat;
+    background-size: 230px 112px;
+}
+.trip{
+    padding-top: 8vh;
+}
+.trip a{
+    background: url(../images/生活攻略/行在南邮/对话框_08.png) right center no-repeat;
+    background-size: 230px 112px;
+}
+.xinsheng{
+    padding-top: 8vh;
+}
+.xinsheng a{
+    background: url(../images/生活攻略/行在南邮/对话框_09.png) left center no-repeat;
+    background-size: 230px 112px;
+}
+.schoolBus{
+    padding-top: 8vh;
+}
+.schoolBus a{
+    background: url(../images/生活攻略/行在南邮/对话框_10.png) right center no-repeat;
+    background-size: 230px 112px;
+}
+/*老乡群*/
+.laoxiang_group{
+    width: 100%;
+    height: 100vh;
+}
+.laoxiang_group .laoxiangIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/行在南邮/老乡群.png)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.LX_content1 h4,p{
+    text-align: center;
+    line-height: 25px;
+}
+.LX_content1 h3{
+    padding: 5px 0;
+}
+.LX_content2 h4,p{
+    text-align: center;
+    line-height: 25px;
+}
+.LX_content2 h3{
+    padding: 5px 0;
+}
+/*南京旅游地点*/
+.tripSight{
+    width: 100%;
+}
+.tripSight .tripSightIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/行在南邮/南京旅游地点.png)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.tripSight_content{
+    width: 100%;
+}
+.tripSight_content ul{
+    width: 100%;
+}
+.tripSight_content ul li{
+    width: 100%;
+}
+.tripSight_content ul li img{
+    width: 100%;
+}
+/*校车时刻表*/
+.schooldBusSchedule{
+    width: 100%;
+}
+.sbScheduleIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/行在南邮/校车时刻表.png)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.schedule_content{
+    width: 100%;
+}
+.schedule_content img{
+    width: 100%;
+}
+/*心理咨询*/
+.psychologicalConsult{
+    width: 100%;
+}
+.psyIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/心理咨询.jpeg)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.psy_content{
+    width: 100%;
+}
+.psy_content img{
+    width: 100%;
+}
+/*校园公共账号*/
+.publicAccount{
+    width: 100%;
+}
+.publicAccount .accountIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/校园公共账号.jpeg)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.account_content .account_content1{
+    width: 100%;
+}
+.account_content .account_content1 h4{
+    padding: 15px 0;
+}
+.account_content .account_content1 p{
+    line-height: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+.account_content .account_content2{
+    width: 100%;
+}
+.account_content .account_content2 h4{
+    padding: 15px 0;
+}
+.account_content .account_content2 p{
+    line-height: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+/*新生群*/
+.fm_group{
+    width: 100%;
+}
+.xinshengIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/新生群.png)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.fmGroup_content{
+    width: 100%;
+}
+.fmGroup_content ul{
+    width: 100%;
+    padding: 25px 0;
+}
+.fmGroup_content ul li {
+    width: 100%;
+}
+.fmGroup_content ul li p{
+    line-height: 30px;
+    text-align: center;
+}
+/*小程序*/
+.chatchat{
+    width: 100%;
+}
+.chatchat .chatIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background: url(../images/生活攻略/小程序.jpeg)right center no-repeat;
+    background-size: 40px 40px;
+    right: 10px;
+    top: 13px;
+}
+.chat_content{
+    width: 100%;
+}
+.chat_content img{
+    width: 100%;
+}
 

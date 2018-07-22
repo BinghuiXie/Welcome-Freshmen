@@ -7,24 +7,25 @@ $(function () {
     /*首页七个链接的变量*/
     var jump1,jump2,jump3,jump4,jump5,jump6,jump7;
     jump = $(".freshman_zone");
-    jump1 = $(".slide1");
-    jump2 = $(".slide2");
-    jump3 = $(".slide3");
-    jump4 = $(".slide4");
-    jump5 = $(".slide5");
-    jump6 = $(".slide6");
-    jump7 = $(".slide7");
+    jump1 = $(".slide1");/*首页 - 南邮概况*/
+    jump2 = $(".slide2");/*首页 - 新生导航*/
+    jump3 = $(".slide3");/*首页 - 生活攻略*/
+    jump4 = $(".slide4");/*首页 - 院系概览*/
+    jump5 = $(".slide5");/*首页 - 军训攻略*/
+    jump6 = $(".slide6");/*首页 - 社团初探*/
+    jump7 = $(".slide7");/*首页 - 技能学习*/
+    jump8 = $(".slide8");/*首页 - 考研求职*/
     /*用于获取南邮概况事件的变量*/
     var overview = $(".overview_njupt");
     PageJump(jump,jump1,overview);
     /*用于获取南邮概况界面6个模块事件变量*/
     var overview1,overview2,overview3,overview4,overview5,overview6;
-    overview1 = $(".overview1");
-    overview2 = $(".overview2");
-    overview3 = $(".overview3");
-    overview4 = $(".overview4");
-    overview5 = $(".overview5");
-    overview6 = $(".overview6");
+    overview1 = $(".overview1");/*南邮概况 - 学校简介*/
+    overview2 = $(".overview2");/*南邮概况 - 学校章程*/
+    overview3 = $(".overview3");/*南邮概况 - 南邮校史*/
+    overview4 = $(".overview4");/*南邮概况 - 现任领导*/
+    overview5 = $(".overview5");/*南邮概况 - 电子地图*/
+    overview6 = $(".overview6");/*南邮概况 - 360°南邮全景地图*/
     /*获取南邮概况内部内容*/
     var college1,college2,college3,college4,college5,college6;
     college1 = $(".college_intro");
@@ -83,7 +84,24 @@ $(function () {
     PageJump(college5,sanPL,san_map);
     PageJump(college5,suoJC,suo_map);
 
+    /*新生导航跳转*/
+    /*jump2点击跳转*/
+    /*新生导航界面*/
+    var freshmen_guide = $(".Guide_system");
+    PageJump(jump,jump2,freshmen_guide);
+    var guide1 = $(".guide1");/*新生导航 - 报到流程*/
+    var guide2 = $(".guide2");/*新生导航 - 新生报到推荐单*/
+    var guide3 = $(".guide3");/*新生导航 - 学长学姐建议*/
+    var guide4 = $(".guide4");/*新生导航 - 入学小贴士*/
 
+    var procedure = $('.register_procedure');/*内容 - 报到流程*/
+    var list = $(".register_list");/*内容 - 新生报到推荐单*/
+    var suggest = $(".suggestion");/*内容 - 学长学姐建议*/
+    var tips = $(".register_tips");/*内容 - 入学小贴士*/
+    PageJump(freshmen_guide,guide1,procedure);
+    PageJump(freshmen_guide,guide2,list);
+    PageJump(freshmen_guide,guide3,suggest);
+    PageJump(freshmen_guide,guide4,tips);
 });
 /*PageJump函数：
 * 第一个参数：需要隐藏的界面；
