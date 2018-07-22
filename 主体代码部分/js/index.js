@@ -109,7 +109,7 @@ $(function () {
 * 第三个参数：需要显示的界面；
 * */
 var PageJump = function (e1,e,e2) {
-    e.unbind('click').click(function () {
+    e.unbind('click').on("touchend",function () {
         console.log("123");
         e1.addClass("hidden");
         e2.removeClass("hidden");
