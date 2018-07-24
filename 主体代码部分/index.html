@@ -4,37 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable = no">
     <title>新生专区</title>
+    <meta charset="utf-8" />
+    <title>Tendina plugin</title>
+    <link rel="stylesheet" href="css/wel.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="tendina-master/css/demo.css">
     <link rel="stylesheet" href="css/base.css">
     <!--一定要把jQuery库放在bootstrap前面-->
     <script src="fastclick/lib/fastclick.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/slide.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </head>
 <body>
-<div class="common_Width">
+<div class="navBar">
+    <content>
+        <menu>
+            <label for="trigger">
+                <input id="trigger" type="checkbox" />
+                <section class="drawer-list">
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#"><h3>南邮概况</h3></a>
+                            <ul>
+                                <li><a href="#">学校简介</a></li>
+                                <li><a href="#">学校章程</a></li>
+                                <li><a href="#">南邮校史</a></li>
+                                <li><a href="#">现任领导</a></li>
+                                <li><a href="#">电子地图</a></li>
+                                <li><a href="#">360°南邮全景地图</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><h3>新生导航</h3></a>
+                            <ul>
+                                <li><a href="#">报到流程</a></li>
+                                <li><a href="#">新生报到推荐单</a></li>
+                                <li><a href="#">学长学姐建议</a>
+                                    <ul>
+                                        <li>Subsubmenu 2</li>
+                                        <li>Subsubmenu 2</li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">入学小贴士</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><h3>生活攻略</h3></a>
+                            <ul>
+                                <li><a href="#">衣在南邮</a></li>
+                                <li><a href="#">食在南邮</a></li>
+                                <li><a href="#">住在南邮</a></li>
+                                <li><a href="#">行在南邮</a></li>
+                                <li><a href="#">南京天气</a></li>
+                                <li><a href="#">周围商区</a></li>
+                                <li><a href="#">食堂介绍</a></li>
+                                <li><a href="#">宿舍介绍</a></li>
+                                <li><a href="#">校车时刻表</a></li>
+                                <li><a href="#">南京旅游地点</a></li>
+                                <li><a href="#">老乡群</a></li>
+                                <li><a href="#">新生群</a></li>
+                                <li><a href="#">心理咨询</a></li>
+                                <li><a href="#">南邮小程序</a></li>
+                                <li><a href="#">教务处</a></li>
+                                <li><a href="#">本科招生网</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><h3>院系概览</h3></a>
+                            <ul>
+                                <li><a href="#">通信与信息工程学院</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <hamburger>
+                    <i class="menu"></i>
+                    <text>
+                    </text>
+                </hamburger>
+            </label>
+        </menu>
+    </content>
+</div>
+<div class="common_Width ">
     <!--首页-->
     <!--轮播切换序号 1-10表示首页部分-->
-    <div class="freshman_zone " data-slide-to="0" data-target="#slideAnimate">
+    <div class="freshman_zone  hidden common_Width">
         <header class="top_welcome_NJUPT">
             <div class="top_welcome_NJUPT_box">
-                <a href="#" class="icon_logo"></a>
+                <a href="" class="icon_logo"></a>
                 <span class="title"></span>
             </div>
         </header>
         <div class="welcome_content">
             <ul>
                 <li class="box1">
-                    <a href="" data-slide-to="1" data-target="#slideAnimate" class="slide1">
+                    <a href="" class="slide1">
                         <p>南邮概况</p>
                         <img src="images/首页/南邮概况.png" height="85" width="337"/>
                     </a>
                 </li>
                 <li class="box2">
-                    <a href="" data-slide-to="2" data-target="#slideAnimate" class="slide2">
+                    <a href="" class="slide2">
                         <span class="common_bgColor bgColor"></span>
                         <p>新生导航</p>
                         <img src="
@@ -42,39 +130,39 @@
                     </a>
                 </li>
                 <li class="box2">
-                    <a href="javascript:void(0);" data-slide-to="3" data-target="#slideAnimate" class="slide3">
+                    <a href="" data-slide-to="3" data-target="#slideAnimate" class="slide3">
                         <span class="common_bgColor bgColor1"></span>
                         <p>生活攻略</p>
                         <img src="images/首页/生活攻略.jpg"/></a>
                 </li>
-                <li class="box2" data-slide-to="4" data-target="#slideAnimate" class="slide4">
-                    <a href="javascript:void(0);">
+                <li class="box2"  class="slide4">
+                    <a href="">
                         <span class="common_bgColor bgColor2"></span>
                         <p>院系概览</p>
                         <img src="images/首页/院系概览.jpg"/></a>
                 </li>
-                <li class="box2" data-slide-to="5" data-target="#slideAnimate" class="slide5">
-                    <a href="javascript:void(0);">
+                <li class="box2" class="slide5">
+                    <a href="">
                         <span class="common_bgColor bgColor3"></span>
                         <p>军训攻略</p>
                         <img src="images/首页/军训攻略.jpg"/>
                     </a>
                 </li>
                 <li class="box2">
-                    <a href="javascript:void(0);" data-slide-to="6" data-target="#slideAnimate" class="slide6">
+                    <a href="" data-slide-to="6" data-target="#slideAnimate" class="slide6">
                         <span class="common_bgColor bgColor3"></span>
                         <p>社团初探</p>
                         <img src="images/首页/社团初探.jpg"/></a>
                 </li>
                 <li class="box2" data-slide-to="7" data-target="#slideAnimate">
-                    <a href="javascript:void(0);" class="slide7">
+                    <a href="" class="slide7">
                         <span class="common_bgColor bgColor5"></span>
                         <p>技能学习</p>
                         <img src="images/首页/技能学习.jpg"/>
                     </a>
                 </li>
                 <li class="box2">
-                    <a href="javascript:void(0);" class="slide8">
+                    <a href="" class="slide8">
                         <span class="common_bgColor bgColor5"></span>
                         <p>考研求职</p>
                         <img src="images/首页/考研求职.jpg"/>
@@ -86,29 +174,27 @@
             </ul>
         </div>
     </div>
+
     <!--南邮概况-->
     <!--轮播切换序号11-20表示南邮概况部分-->
-    <div class="overview_njupt hidden" data-slide-to="11" data-target="#slideAnimate">
+    <div class="overview_njupt hidden">
         <header class="headerBar">
-            <!--返回小三角-->
-            <div class="overview_icon back1" data-slide-to="12" data-target="#slideAnimate"></div>
             <h3 class="overview_title">南邮概况</h3>
         </header>
         <div class="overview_Content height1">
             <ul class="clearfix">
-                <li class="overview1"><a href="javascript:void(0);" data-slide-to="13" data-target="#slideAnimate"><img src="images/南邮概况/学校简介.jpeg" height="249" width="246"/><p>学校简介</p></a></li>
-                <li class="overview2"><a href="javascript:void(0);" data-slide-to="14" data-target="#slideAnimate"><img src="images/南邮概况/学校章程.jpeg"/><p>学校章程</p></a></li>
-                <li class="overview3"><a href="javascript:void(0);" data-slide-to="15" data-target="#slideAnimate"><img src="images/南邮概况/南邮校史.jpeg" height="150" width="150"/><p>南邮校史</p></a></li>
-                <li class="overview4"><a href="javascript:void(0);" data-slide-to="16" data-target="#slideAnimate"><img src="images/南邮概况/现任领导.jpeg"/><p>现任领导</p></a></li>
-                <li class="overview5"><a href="javascript:void(0);" data-slide-to="17" data-target="#slideAnimate"><img src="images/南邮概况/电子地图.jpeg" height="150" width="150"/><p>电子地图</p></a></li>
-                <li class="overview6"><a href="javascript:void(0);" data-slide-to="18" data-target="#slideAnimate"><img src="images/南邮概况/360°南邮全景地图.jpeg" height="328" width="330"/><p>360°南邮全景地图</p></a></li>
+                <li class="overview1"><a href="" data-slide-to="13" data-target="#slideAnimate"><img src="images/南邮概况/学校简介.jpeg" height="249" width="246"/><p>学校简介</p></a></li>
+                <li class="overview2"><a href="" data-slide-to="14" data-target="#slideAnimate"><img src="images/南邮概况/学校章程.jpeg"/><p>学校章程</p></a></li>
+                <li class="overview3"><a href="" data-slide-to="15" data-target="#slideAnimate"><img src="images/南邮概况/南邮校史.jpeg" height="150" width="150"/><p>南邮校史</p></a></li>
+                <li class="overview4"><a href="" data-slide-to="16" data-target="#slideAnimate"><img src="images/南邮概况/现任领导.jpeg"/><p>现任领导</p></a></li>
+                <li class="overview5"><a href="" data-slide-to="17" data-target="#slideAnimate"><img src="images/南邮概况/电子地图.jpeg" height="150" width="150"/><p>电子地图</p></a></li>
+                <li class="overview6"><a href="" data-slide-to="18" data-target="#slideAnimate"><img src="images/南邮概况/360°南邮全景地图.jpeg" height="328" width="330"/><p>360°南邮全景地图</p></a></li>
             </ul>
         </div>
     </div>
     <!--南邮概况 - 学校简介-->
     <div class="college_intro hidden">
         <header class="headerBar">
-            <div class="overview_icon test"><a href="javascript:void(0);" class=""></a></div>
             <h3 class="overview_title">学校简介</h3>
             <span class="line"></span>
         </header>
@@ -202,7 +288,6 @@
     <!--南邮概况 - 学校章程-->
     <div class="college_rule hidden">
         <header class="headRule">
-            <div class="backRule"></div>
             <h3 class="titleRule">学校章程</h3>
             <span class="lineRule"></span>
         </header>
@@ -213,7 +298,6 @@
     <!--南邮概况 - 南邮校史-->
     <div class="college_history hidden">
         <header class="headRule">
-            <div class="backRule"></div>
             <h3 class="titleRule">学校章程</h3>
             <span class="lineRule"></span>
         </header>
@@ -226,29 +310,28 @@
     <!--南邮概况 - 现任领导-->
     <div class="now_leader hidden">
         <header class="headerBar">
-            <div class="overview_icon"></div>
             <h3 class="overview_title">现任领导</h3>
         </header>
 
         <div class="leader_Content">
             <ul class="clearfix">
-                <li class="leader1"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/刘陈.jpeg" /><p>党委书记 刘陈</p></a></li>
-                <li class="leader2"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/杨震.jpeg" /><p>校长 杨震</p></a></li>
-                <li class="leader3"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/王承宽.jpeg" ><p>党委常委、副校长 <br>王承宽</p></a></li>
-                <li class="leader4"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/王国平.jpeg" /><p>党委常委、副校长 <br>王国平</p></a></li>
-                <li class="leader5"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/王宗荣.jpeg" /><p>党委常委、副校长 <br>王宗荣</p></a></li>
-                <li class="leader6"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/蒋国平.jpeg" /><p>党委常委、副校长 <br>蒋国平</p></a></li>
-                <li class="leader7"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/张志华.jpeg" /><p>党委常委、副校长 <br>张志华</p></a></li>
-                <li class="leader8"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/周南平.jpeg" /><p>党委常委、副校长 <br>周南平</p></a></li>
-                <li class="leader9"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/李子全.jpeg" /><p>党委常委、纪委书记 李子全 </p></a></li>
-                <li class="leader10"><a href="javascript:void(0);"><img src="images/南邮概况/现任领导/汪联辉.jpeg"/><p>副校长 汪联辉</p></a></li>
+                <li class="leader1"><a href=""><img src="images/南邮概况/现任领导/刘陈.jpeg" /><p>党委书记 刘陈</p></a></li>
+                <li class="leader2"><a href=""><img src="images/南邮概况/现任领导/杨震.jpeg" /><p>校长 杨震</p></a></li>
+                <li class="leader3"><a href=""><img src="images/南邮概况/现任领导/王承宽.jpeg" ><p>党委常委、副校长 <br>王承宽</p></a></li>
+                <li class="leader4"><a href=""><img src="images/南邮概况/现任领导/王国平.jpeg" /><p>党委常委、副校长 <br>王国平</p></a></li>
+                <li class="leader5"><a href=""><img src="images/南邮概况/现任领导/王宗荣.jpeg" /><p>党委常委、副校长 <br>王宗荣</p></a></li>
+                <li class="leader6"><a href=""><img src="images/南邮概况/现任领导/蒋国平.jpeg" /><p>党委常委、副校长 <br>蒋国平</p></a></li>
+                <li class="leader7"><a href=""><img src="images/南邮概况/现任领导/张志华.jpeg" /><p>党委常委、副校长 <br>张志华</p></a></li>
+                <li class="leader8"><a href=""><img src="images/南邮概况/现任领导/周南平.jpeg" /><p>党委常委、副校长 <br>周南平</p></a></li>
+                <li class="leader9"><a href=""><img src="images/南邮概况/现任领导/李子全.jpeg" /><p>党委常委、纪委书记 李子全 </p></a></li>
+                <li class="leader10"><a href=""><img src="images/南邮概况/现任领导/汪联辉.jpeg"/><p>副校长 汪联辉</p></a></li>
             </ul>
         </div>
     </div>
     <!--领导们-->
-    <div class="leaders">
-        <div class="liuchen hidden">
-            <header class="leaderBack"></header>
+    <div class="leaders hidden">
+        <!--刘陈-->
+        <div class="liuchen">
             <img src="images/南邮概况/现任领导/刘陈/刘陈.jpeg" height="267" width="400"/>
             <h3>南京邮电大学党委书记&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刘陈</h3>
             <h4>教授 博士生导师</h4>
@@ -257,8 +340,7 @@
             <p>长期从事高等教育管理以及电路与网络理论、通信信号处理理论与技术的教学和科研工作。曾荣获江苏省普通高等学校“优秀青年骨干教师”称号。先后主持国家自然科学基金项目等国家、省部级科研项目十余项，在IEEE、IEICE汇刊等国内外学术刊物和会议上发表学术论文80余篇，荣获教育部高等学校科学研究优秀成果奖自然科学二等奖1项。荣获国家教学成果一等奖1项，江苏省教学成果奖特等奖2项，一等奖3项、二等奖2项，主讲的课程《电路分析基础》被认定为国家精品在线开放课程，编写的教材《电路分析》被评为江苏省精品教材和国家“十一五”规划教材。</p>
         </div>
         <!--杨震-->
-        <div class="yangzhen hidden">
-            <header class="leaderBack"></header>
+        <div class="yangzhen">
             <img src="images/南邮概况/现任领导/杨震/杨震.jpeg" height="267" width="400"/>
             <h3>南京邮电大学校长&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杨震</h3>
             <h3>教授，博士生导师</h3>
@@ -271,8 +353,7 @@
             <p>曾获国家教学成果一等奖和二等奖、全军科技进步二等奖、江苏省科技进步三等奖、江苏省教学成果特等奖；全国优秀科技工作者、享受政府特殊津贴专家、江苏省有突出贡献中青年专家、江苏省普通高等学校“优秀青年骨干教师”、江苏省“333工程”培养对象、江苏省普通高等学校“青蓝工程”新世纪学术带头人、江苏省优秀教育工作者、中国电子教育学会“先进学会工作者”等称号。</p>
         </div>
         <!--王成宽-->
-        <div class="wangchengkuan imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="wangchengkuan imgBox2">
             <img src="images/南邮概况/现任领导/王承宽/王承宽.jpeg" height="277" width="200"/>
             <h3>南京邮电大学党委常委、副校长&nbsp;&nbsp;&nbsp;&nbsp;王承宽</h3>
             <h3>研究员</h3>
@@ -283,8 +364,7 @@
             <p>曾获南京航空航天大学优秀共产党员、航空航天工业部优秀思想政治工作者、江苏省高等教育学会首届优秀工作者等荣誉称号。</p>
         </div>
         <!--王国平-->
-        <div class="wangguoping imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="wangguoping imgBox2  ">
             <img src="images/南邮概况/现任领导/王国平/王国平.jpeg" height="272" width="200"/>
             <h3>南京邮电大学党委常委、副校长 王国平</h3>
             <h3>研究员、硕士生导师</h3>
@@ -294,8 +374,7 @@
             <p>先后二次被中共江苏省委教育工委授予“江苏省高校优秀党务工作者”荣誉称号；被共青团江苏省委授予“江苏省新长征突击手”荣誉称号。</p>
         </div>
         <!--王宗荣-->
-        <div class="wangzongrong imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="wangzongrong imgBox2  ">
             <img src="images/南邮概况/现任领导/王宗荣/王宗荣.jpeg" height="626" width="425"/>
             <h3>南京邮电大学党委常委、副校长  王宗荣</h3>
             <h3>研究员、博士生导师</h3>
@@ -304,8 +383,7 @@
             <p>多年从事高等教育管理、党建和思想政治教育、马克思主义理论的研究工作和多门相关课程的教学科研工作，承担多项省部级哲学社会科学重大项目研究，参编国防科工委《大学生就业指导》统编教材，先后在核心期刊和其它正式出版刊物上发表研究论文30余篇。主要兼职：南京航空航天大学教授，中国航空学会会员、江苏省航空航天学会理事，中国职工教育与职业培训协会常务理事、中国交通教育研究会常务理事、江苏省可再生能源协会副会长。2011年6月荣获“中国技工院校发展突出贡献奖”。</p>
         </div>
         <!--蒋国平-->
-        <div class="jiangguoping imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="jiangguoping imgBox2  ">
             <img src="images/南邮概况/现任领导/蒋国平/蒋国平.jpeg" height="297" width="200"/>
             <h3>南京邮电大学党委常委、副校长　蒋国平</h3>
             <h3>教授、博士生导师</h3>
@@ -315,8 +393,7 @@
             <p>长期从事混沌系统控制及其在通信和信息系统中的应用、网络病毒与谣言传播模型及其控制方法、复杂网络控制与故障诊断。近年来，主持完成国家、省部级科研项目近20项，在研3项，发表学术论文200余篇，其中SCI收录100余篇；拥有发明专利20余项，获得省部级科技和教学奖励5项。</p>
         </div>
         <!--张志华-->
-        <div class="zhangzhihua imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="zhangzhihua imgBox2  ">
             <img src="images/南邮概况/现任领导/张志华/张志华.jpeg" height="290" width="200"/>
             <h3>南京邮电大学党委常委、副校长　张志华</h3>
             <h3>教授、硕士生导师</h3>
@@ -324,8 +401,7 @@
             <p>主要研究方向为高等教育管理、技术创新与知识管理。近年来主持或参与完成10余项省部级课题研究工作。在《中国高等教育》《中国青年研究》《江海学刊》《江苏社会科学》《江苏高教》等核心期刊和省级期刊发表论文近五十篇，参编通用教材一部，多篇论文和研究成果获全国高校思想政治教育优秀论文奖、江苏高校哲学社会科学优秀成果二等奖、江苏高校思想政治教育优秀科研成果二等奖、江苏省教育科学优秀成果三等奖。获学校教学成果一等奖。目前主持在研江苏省社科基金重点项目一项、教育部人文社会科学研究规划基金项目一项。曾获“江苏省新长征突击手”“全国大学生暑期社会实践先进个人”等荣誉称号。</p>
         </div>
         <!--周南平-->
-        <div class="zhounanping imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="zhounanping imgBox2  ">
             <img src="images/南邮概况/现任领导/周南平/周南平.jpeg" height="296" width="200"/>
             <h3>南京邮电大学党委常委、副校长　周南平 </h3>
             <h3>研究员、硕士生导师</h3>
@@ -334,8 +410,7 @@
             <p>主要研究方向为高等教育管理、党建、思想政治教育。近年来主持或参与完成十多项省级以上课题研究。在《江苏高教》、《教育探索》等期刊发表论文二十多篇，参编著作三部，研究成果曾获江苏省高等教育科学研究成果三等奖、江苏省党的建设学会党建调研课题优秀成果二等奖。</p>
         </div>
         <!--李子全-->
-        <div class="liziquan imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="liziquan imgBox2 ">
             <img src="images/南邮概况/现任领导/李子全/李子全.jpeg" height="614" width="425"/>
             <h3>南京邮电大学党委常委、纪委书记 李子全</h3>
             <h3>博士、教授、博士生导师</h3>
@@ -344,8 +419,7 @@
             <p>长期从事新金属材料、薄膜材料的教学科研工作，现兼任教育部金属材料工程与冶金工程专业指导委员会委员。主持或参与完成国家省部级科研课题10余项，获省部级科技进步二等奖2项、三等奖3项，发表学术论文170余篇，其中被SCI和EI分别收录40和90余篇；主持省级教育教学研究课题5项，获江苏省优秀教育教学成果一等奖3项、二等奖2项，江苏省首届“材料科学与工程”品牌专业负责人，江苏省“工程材料学”精品课程负责人等。获中国石油和化学工业联合会石油和化工行业高技能人才培养突出贡献奖。</p>
         </div>
         <!--汪联辉-->
-        <div class="wanglianhui imgBox2 hidden">
-            <header class="leaderBack"></header>
+        <div class="wanglianhui imgBox2 ">
             <img src="images/南邮概况/现任领导/汪联辉/汪联辉.jpeg" height="413" width="295"/>
             <h3>南京邮电大学副校长　汪联辉</h3>
             <h3><p>教授、博士生导师</p></h3>
@@ -353,20 +427,18 @@
             <p>长期从事光电纳米材料、生物光电子学、纳米生物医学等领域教学科研工作。主持国家杰出青年基金、国家自然科学基金重点项目、国家重大科学研究计划项目等30多项国内和国际科研项目。在Nature、Advanced Materials、J Am Chem Soc、Angew Chem Int Ed等著名学术期刊上发表SCI论文200余篇；获授权中国和美国发明专利20余件；部分研究成果获中国分析测试协会科学技术奖一等奖和江苏省科学技术奖二等奖。</p>
             <p>先后获得教育部“长江学者奖励计划”特聘教授、国家杰出青年科学基金获得者、“万人计划”领军人才、“百千万人才工程”国家级人选、国家“有突出贡献中青年专家”、全国优秀科技工作者、中国侨联“中国侨界贡献奖”、教育部“长江学者和创新团队发展计划”创新团队带头人、江苏省创新团队领军人才、江苏省“333 高层次人才工程”首席科学家等称号。</p>
         </div>
-
     </div>
     <!--南邮概况 - 电子地图-->
     <div class="electronicMap hidden">
         <header class="headerBar">
-            <div class="overview_icon"></div>
             <h3 class="overview_title">电子地图</h3>
             <span class="line"></span>
         </header>
         <div>
             <ul>
-                <li class="box2"><a href="javascript:void(0);"><span class="common_bgColor bgColor5"></span><p>仙林校区</p><img src="images/电子地图/仙林校区.jpeg"/></a></li>
-                <li class="box2"><a href="javascript:void(0);"><span class="common_bgColor bgColor6"></span><p>三牌楼校区</p><img src="images/电子地图/三牌楼校区.jpeg"/></a></li>
-                <li class="box2"><a href="javascript:void(0);"><span class="common_bgColor bgColor7"></span><p>锁金村校区</p><img src="images/电子地图/锁金村校区.jpeg"/></a></li>
+                <li class="box2"><a href=""><span class="common_bgColor bgColor5"></span><p>仙林校区</p><img src="images/电子地图/仙林校区.jpeg"/></a></li>
+                <li class="box2"><a href=""><span class="common_bgColor bgColor6"></span><p>三牌楼校区</p><img src="images/电子地图/三牌楼校区.jpeg"/></a></li>
+                <li class="box2"><a href=""><span class="common_bgColor bgColor7"></span><p>锁金村校区</p><img src="images/电子地图/锁金村校区.jpeg"/></a></li>
             </ul>
         </div>
     </div>
@@ -384,37 +456,37 @@
     </div>
     <!--南邮概况 - 360°南邮全景地图-->
 
+
     <!--新生导航-->
     <div class="Guide_system hidden">
         <header class="headerBar headColor">
-            <div class="overview_white_icon"></div>
             <h3>新生导航</h3>
         </header>
         <div class="guide_list">
             <ul class="clearfix">
                 <li class="guide1">
-                    <a href="javascript:void(0);">
+                    <a href="">
                         <img src="images/新生导航/报道流程.jpeg "class="odd" height="419" width="559"/>
                         <h4>报道流程</h4>
                         <div></div>
                     </a>
                 </li>
                 <li class="guide2">
-                    <a href="javascript:void(0);">
+                    <a href="">
                         <img src="images/新生导航/新生报到必备清单.jpeg"class="even" height="402" width="580"/>
                         <h4>新生报道推荐清单</h4>
                         <div></div>
                     </a>
                 </li>
                 <li class="guide3">
-                    <a href="javascript:void(0);">
+                    <a href="">
                         <img src="images/新生导航/学长学姐建议.jpeg"class="odd" height="389" width="580"/>
                         <h4>学长学姐建议</h4>
                         <div></div>
                     </a>
                 </li>
                 <li class="guide4">
-                    <a href="javascript:void(0);">
+                    <a href="">
                         <img src="images/新生导航/入学小贴士.jpeg" class="even" height="435" width="580"/>
                         <h4>入学小贴士</h4>
                         <div></div>
@@ -423,11 +495,9 @@
             </ul>
         </div>
     </div>
-
     <!--新生导航 - 报到流程-->
     <div class="register_procedure imgBox3 hidden">
         <header class="headerBar headColor">
-            <div class="overview_white_icon"></div>
             <h3>报到流程</h3>
         </header>
         <img src="images/新生导航/报道流程/报道流程.png" height="666" width="448"/>
@@ -435,32 +505,30 @@
     <!--新生导航 - 新生报道推荐单-->
     <div class="register_list imgBox3 hidden">
         <header class="headerBar headColor">
-            <div class="overview_white_icon"></div>
             <h3>新生报道推荐单</h3>
         </header>
         <img src="images/新生导航/必备清单/必备清单.png"/>
     </div>
     <!--新生导航 - 学长学姐建议-->
-    <div class="suggestion imgBox3 hidden ">
+    <div class="suggestion imgBox3 hidden">
         <header class="headerBar headColor">
-            <div class="overview_white_icon"></div>
             <h3>学长学姐建议</h3>
         </header>
         <img src="images/新生导航/建议/建议.png"/>
         <img src="images/新生导航/建议/底部图.jpeg" height="385" width="580"/>
     </div>
     <!--新生导航 - 入学小贴士-->
-    <div class="register_tips imgBox3 hidden ">
+    <div class="register_tips imgBox3 hidden">
         <header class="headerBar headColor">
-            <div class="overview_white_icon"></div>
             <h3>入学小贴士</h3>
         </header>
         <img src="images/新生导航/入学小贴士/入学小贴士.png"/>
     </div>
+
     <!--院系概览-->
     <div class="overviewMajor hidden">
         <header class="headerMajor">
-            <span class="homeMenu"><img src="images/院系概览/home142.png" height="512" width="512"/></span>
+            <!--<span class="homeMenu"><img src="images/院系概览/home142.png" height="512" width="512"/></span>-->
             <div class="NJUPT">
                 <img src="images/院系概览/顶部学校.png" height="85" width="337"/>
             </div>
@@ -469,38 +537,190 @@
             <img src="images/院系概览/顶部学院概览.png" height="120" width="900"/></div>
         <div class="InstituteIntro">
             <ul class="clearfix">
-                <li><a href="javascript:void(0);"><img src="images/院系概览/通院.jpeg" height="502" width="502"/><p>通信与信息工程学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/电光微院.jpeg" height="1080" width="1080"/><p> 电子与光学工程学院、微电子学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/计软院.jpeg" height="640" width="640"/><p>计软、网安院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/自动化学院.jpeg" height="276" width="276"/><p>自动化学院、人工智能学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/材料院.jpeg"/><p>材料科学与工程学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/物联网学院.jpeg" height="640" width="640"/><p>物联网学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/理学院.jpeg" height="438" width="440"/><p>理学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/地生院.png" height="182" width="484" class="now"/><p>地理与生物信息学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/现代邮政学院.jpeg" height="640" width="640"/><p>现代邮政学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/传媒院.png" height="201" width="296"/><p>传媒与艺术学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/管院.jpeg"/><p>管理学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/经济学院.jpeg" height="640" width="640"/><p>经济学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/人文院.jpeg" height="385" width="385"/><p>社会与人口学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/外院.jpeg" height="462" width="462"/><p>外国语学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/教科院.jpeg" height="640" width="640"/><p>教育科学与技术学院</p></a></li>
-                <li><a href="javascript:void(0);"><img src="images/院系概览/贝尔院.png" height="174" width="140"/><p>贝尔英才学院</p></a></li>
-                <li><a href="javascript:void(0);"><p></p></a></li>
-                <li><a href="javascript:void(0);"><p></p></a></li>
+                <li><a href=""><img src="images/院系概览/通院.jpeg" height="502" width="502"/><p>通信与信息工程学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/电光微院.jpeg" height="1080" width="1080"/><p> 电子与光学工程学院、微电子学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/计软院.jpeg" height="640" width="640"/><p>计软、网安院</p></a></li>
+                <li><a href=""><img src="images/院系概览/自动化学院.jpeg" height="276" width="276"/><p>自动化学院、人工智能学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/材料院.jpeg"/><p>材料科学与工程学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/物联网学院.jpeg" height="640" width="640"/><p>物联网学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/理学院.jpeg" height="438" width="440"/><p>理学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/地生院.png" height="182" width="484" class="now"/><p>地理与生物信息学院</p></a></li>
+                <li><a href="https://mp.weixin.qq.com/s/N-0ZtxmVJ684DkhCZrA9sw"><img src="images/院系概览/现代邮政学院.jpeg" height="640" width="640"/><p>现代邮政学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/传媒院.png" height="201" width="296"/><p>传媒与艺术学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/管院.jpeg"/><p>管理学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/经济学院.jpeg" height="640" width="640"/><p>经济学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/人文院.jpeg" height="385" width="385"/><p>社会与人口学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/外院.jpeg" height="462" width="462"/><p>外国语学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/教科院.jpeg" height="640" width="640"/><p>教育科学与技术学院</p></a></li>
+                <li><a href=""><img src="images/院系概览/贝尔院.png" height="174" width="140"/><p>贝尔英才学院</p></a></li>
+                <li><a href=""><p></p></a></li>
+                <li><a href=""><p></p></a></li>
             </ul>
         </div>
         <div class="bottomMajor">
             <ul>
-                <li><a href="javascript:void(0);"><p class="nowSurf">学院概览</p></a></li>
+                <li><a href=""><p class="nowSurf">学院概览</p></a></li>
                 <li><img src="images/院系概览/底部校徽.jpeg" height="300" width="300"/></li>
-                <li><a href="javascript:void(0);"><p class="passive">专业概览</p></a></li>
+                <li><a href=""><p class="passive">专业概览</p></a></li>
             </ul>
         </div>
     </div>
+    <!--院系概览 - 通院-->
+    <div class="tongyuan hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>通院</h3>
+        </header>
+        <div class="tongyuan_content">
+            <img src="院系概览/通院.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 电院-->
+    <div class="dianyuan hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>电院</h3>
+        </header>
+        <div class="dian_content">
+            <img src="院系概览/电光院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 计软院-->
+    <div class="jiruan hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>计软院</h3>
+        </header>
+        <div class="jiruan_content">
+            <img src="院系概览/计软网安院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 自动化-->
+    <div class="zidonghua hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>自动化学院</h3>
+        </header>
+        <div class="zidonghua_content">
+            <img src="院系概览/自动化终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 材料-->
+    <div class="cailiao hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>材料院</h3>
+        </header>
+        <div class="cailiao_content">
+            <img src="院系概览/材料院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 物联网-->
+    <div class="wulianwang hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>物联网学院</h3>
+        </header>
+        <div class="wulianwang_content">
+            <img src="院系概览/物联网院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 理院-->
+    <div class="liyuan hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>理院</h3>
+        </header>
+        <div class="liyuan_content">
+            <img src="院系概览/理学院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 地生院-->
+    <div class="disheng hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>地生院</h3>
+        </header>
+        <div class="disheng_content">
+            <img src="院系概览/地生院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 传媒院-->
+    <div class="chuanmei hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>传媒院</h3>
+        </header>
+        <div class="chuanmei_content">
+            <img src="院系概览/传媒院终.png"/>
+        </div>
+    </div>
+    <!--院系概览 - 管院-->
+    <div class="guanyuan hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>管院</h3>
+        </header>
+        <div class="guanyuan_content">
+            <img src="院系概览/管院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 经院-->
+    <div class="jingyuan hidden">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>经院</h3>
+        </header>
+        <div class="jingyuan_content">
+            <img src="院系概览/经院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 人文院-->
+    <div class="renwenyuan hidden ">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>人文院</h3>
+        </header>
+        <div class="renwen_content">
+            <img src="院系概览/社会院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 外院-->
+    <div class="waiyuan hidden ">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>外院</h3>
+        </header>
+        <div class="waiyuan_content">
+            <img src="院系概览/外院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 教科-->
+    <div class="jiaoke hidden ">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>教科与技术学院</h3>
+        </header>
+        <div class="jiaoke_content">
+            <img src="院系概览/教科院终.jpg"/>
+        </div>
+    </div>
+    <!--院系概览 - 贝院-->
+    <div class="beiyuan hidden ">
+        <header class="majorHead">
+            <!--<a href=""></a>-->
+            <h3>贝院</h3>
+        </header>
+        <div class="beiyuan_content">
+            <img src="院系概览/贝院终.jpg"/>
+        </div>
+    </div>
+
+
     <!--生活攻略-->
     <div class="life_hint hidden">
         <header class="life_header">
-            <span class="life_icon"></span>
+            <!--<span class="life_icon"></span>-->
             <span class="life_title">
                 <img src="images/生活攻略/顶部南邮.png" height="85" width="337"/>
             </span>
@@ -508,10 +728,10 @@
         <div class="middleBar">
             <div class="life_style">
                 <ul class="clearfix">
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/衣在南邮.png"/><p>衣在南邮</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/食在南邮.png"/><p>食在南邮</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/住在南邮.png"/><p>住在南邮</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/行在南邮.png"/><p>行在南邮</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/衣在南邮.png"/><p>衣在南邮</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/食在南邮.png"/><p>食在南邮</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/住在南邮.png"/><p>住在南邮</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/行在南邮.png"/><p>行在南邮</p></a></li>
                 </ul>
             </div>
             <div class="WCTNJUPT">
@@ -524,18 +744,18 @@
             <span class="quick_visit">快速访问</span>
             <div class="life_content">
                 <ul class="clearfix">
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/南京天气.png"/><p>南京天气</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/周围商区.png"/><p>周围商区</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/食堂介绍.png"/><p>食堂介绍</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/宿舍介绍.png"/><p>宿舍介绍</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/校车时刻表.png"/><p>校车时刻表</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/南京旅游地点.png"/><p>南京旅游地点</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/老乡群.png"/><p>老乡群</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/新生群.png"/><p>新生群</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/心理咨询.jpeg"/><p>心理咨询</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/校园安全.png"/><p>校园安全</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/校园公共账号.jpeg"/><p>校园公共账号</p></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/生活攻略/周边美食.png"/><p>周边美食</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/南京天气.png"/><p>南京天气</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/周围商区.png"/><p>周围商区</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/食堂介绍.png"/><p>食堂介绍</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/宿舍介绍.png"/><p>宿舍介绍</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/校车时刻表.png"/><p>校车时刻表</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/南京旅游地点.png"/><p>南京旅游地点</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/老乡群.png"/><p>老乡群</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/新生群.png"/><p>新生群</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/心理咨询.jpeg"/><p>心理咨询</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/校园安全.png"/><p>校园安全</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/校园公共账号.jpeg"/><p>校园公共账号</p></a></li>
+                    <li><a href=""><img src="images/生活攻略/周边美食.png"/><p>周边美食</p></a></li>
                 </ul>
             </div>
         </div>
@@ -545,7 +765,7 @@
             <div class="life_content2">
                 <ul class="clearfix">
                     <li><a href="http://jwxt.njupt.edu.cn/"><img class="size1" src="images/生活攻略/正方.png"/><p>正方系统</p></a></li>
-                    <li><a href="javascript:void(0);"><img class="size2" src="images/生活攻略/小程序.jpeg"><p>南邮小程序</p></a></li>
+                    <li><a href=""><img class="size2" src="images/生活攻略/小程序.jpeg"><p>南邮小程序</p></a></li>
                     <li><a href="http://jwc.njupt.edu.cn/"><img class="size3" src="images/生活攻略/校园公共账号.jpeg"/><p>教务处</p></a></li>
                     <li><a href="http://zs.njupt.edu.cn/"><img class="size4" src="images/生活攻略/本科招生网.jpeg"/><p>本科招生网</p></a></li>
                 </ul>
@@ -554,9 +774,9 @@
         </div>
     </div>
     <!--生活攻略 - 衣在南邮-->
-    <div class="cloth hidden">
+    <div class="cloth hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>衣在南邮</h3>
             <span class="clothIcon"></span>
         </header>
@@ -572,9 +792,9 @@
         </div>
     </div>
     <!--生活攻略 - 食在南邮-->
-    <div class="food hidden">
+    <div class="food  hidden">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>食在南邮</h3>
             <span class="foodIcon"></span>
         </header>
@@ -590,9 +810,9 @@
         </div>
     </div>
     <!--生活攻略 - 住在南邮-->
-    <div class="liveNJUPT hidden">
+    <div class="liveNJUPT hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>住在南邮</h3>
             <span class="liveIcon"></span>
         </header>
@@ -608,9 +828,9 @@
         </div>
     </div>
     <!--生活攻略 - 行在南邮-->
-    <div class="walk hidden">
+    <div class="walk hidden " >
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>行在南邮</h3>
             <span class="walkIcon"></span>
         </header>
@@ -634,9 +854,9 @@
         </div>
     </div>
     <!--生活攻略 - 南京天气-->
-    <div class="weatherOFnj hidden">
+    <div class="weatherOFnj hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>南京天气</h3>
             <span class="clothIcon"></span>
         </header>
@@ -650,18 +870,18 @@
         </div>
     </div>
     <!--生活攻略 - 周围商区-->
-    <div class="shops hidden">
+    <div class="shops hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>周围商区</h3>
             <span class="shopIcon"></span>
         </header>
         <img src="images/生活攻略/衣在南邮/周围商区/周围商区 文.png"/>
     </div>
     <!--生活攻略 - 食堂介绍-->
-    <div class="IntroCanteen hidden">
+    <div class="IntroCanteen hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>食堂介绍</h3>
             <span class="canteenIcon"></span>
         </header>
@@ -674,18 +894,18 @@
         </div>
     </div>
     <!--生活攻略 - 宿舍介绍-->
-    <div class="IntroDormitory hidden">
+    <div class="IntroDormitory hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>宿舍介绍</h3>
             <span class="dormitoryIcon"></span>
         </header>
         <img src="images/生活攻略/住在南邮/宿舍介绍/宿舍介绍 文.png"/>
     </div>
     <!--生活攻略 - 校车时刻表-->
-    <div class="schooldBusSchedule hidden">
+    <div class="schooldBusSchedule hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>校车时刻表</h3>
             <span class="sbScheduleIcon"></span>
         </header>
@@ -694,9 +914,9 @@
         </div>
     </div>
     <!--生活攻略 - 南京旅游-->
-    <div class="tripSight hidden">
+    <div class="tripSight hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>南京旅游地点</h3>
             <span class="tripSightIcon"></span>
         </header>
@@ -712,9 +932,9 @@
         </div>
     </div>
     <!--生活攻略 - 老乡群-->
-    <div class="laoxiang_group hidden">
+    <div class="laoxiang_group  hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>老乡群</h3>
             <span class="laoxiangIcon"></span>
         </header>
@@ -749,9 +969,9 @@
         </div>
     </div>
     <!--生活攻略 - 新生群-->
-    <div class="fm_group hidden">
+    <div class="fm_group hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>新生群</h3>
             <span class="xinshengIcon"></span>
         </header>
@@ -786,9 +1006,9 @@
         </div>
     </div>
     <!--生活攻略 - 心理咨询-->
-    <div class="psychologicalConsult hidden">
+    <div class="psychologicalConsult hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>心理咨询</h3>
             <span class="psyIcon"></span>
         </header>
@@ -797,18 +1017,18 @@
         </div>
     </div>
     <!--生活攻略 - 校园安全-->
-    <div class="safety hidden">
+    <div class="safety hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>校园安全</h3>
             <span class="safetyIcon"></span>
         </header>
         <img src="images/生活攻略/住在南邮/校园安全/校园安全 文.png"/>
     </div>
     <!--生活攻略 - 校园公共账号-->
-    <div class="publicAccount hidden">
+    <div class="publicAccount hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>校园公共账号</h3>
             <span class="accountIcon"></span>
         </header>
@@ -844,9 +1064,9 @@
         </div>
     </div>
     <!--生活攻略 - 周边美食-->
-    <div class="deliciousAround hidden">
+    <div class="deliciousAround hidden ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>周边美食</h3>
             <span class="deliciousIcon"></span>
         </header>
@@ -865,9 +1085,9 @@
         </div>
     </div>
     <!--生活攻略 - 小程序-->
-    <div class="chatchat hidden">
+    <div class="chatchat  ">
         <header class="clothHeader">
-            <p class="backIcon"><span>返回</span></p>
+            <!--<p class="backIcon"><span>返回</span></p>-->
             <h3>南邮小程序</h3>
             <span class="chatIcon"></span>
         </header>
@@ -878,9 +1098,9 @@
     <!--社团初探-->
 
     <!--技能学习-->
-    <div class="skill_learn hidden ">
+    <div class="skill_learn ">
         <header class="skill_header">
-            <span class="skill_icon"></span>
+            <!--<span class="skill_icon"></span>-->
             <div class="learnSkills">
                 <img src="images/技能学习/技能学习文字.png"/>
             </div>
@@ -889,12 +1109,12 @@
             <img src="images/技能学习/图片.png"/></div>
         <div class="skill_list">
             <ul class="clearfix">
-                <li ><a href="javascript:void(0);"><p class="C">C</p></a></li>
-                <li ><a href="javascript:void(0);"><p class="C_plus_plus">C++</p></a></li>
-                <li ><a href="javascript:void(0);"><p class="Java">Java</p></a></li>
-                <li ><a href="javascript:void(0);"><p class="Python">Python</p></a></li>
-                <li ><a href="javascript:void(0);"><p class="html">前端开发</p></a></li>
-                <li ><a href="javascript:void(0);"><p class="photoshop">设计</p></a></li>
+                <li ><a href=""><p class="C">C</p></a></li>
+                <li ><a href=""><p class="C_plus_plus">C++</p></a></li>
+                <li ><a href=""><p class="Java">Java</p></a></li>
+                <li ><a href=""><p class="Python">Python</p></a></li>
+                <li ><a href=""><p class="html">前端开发</p></a></li>
+                <li ><a href=""><p class="photoshop">设计</p></a></li>
             </ul>
         </div>
         <div class="recommendWeb">
@@ -921,12 +1141,12 @@
         <div class="bottom_encourage"><img src="images/技能学习/底部文字.png" height="48" width="300"/></div>
     </div>
     <!--技能学习 - C语言-->
-    <div class="learnC hidden">
+    <div class="learnC ">
         <header class="skillHeader"></header>
         <img src="images/技能学习/C语言.png"/>
     </div>
     <!--技能学习 - C++ -->
-    <div class="learnCPP hidden">
+    <div class="learnCPP hidden ">
         <header class="skillHeader"></header>
         <h3>如何较为快速的入门C++语言</h3>
         <div class="middleLearn">
@@ -947,7 +1167,7 @@
         </div>
     </div>
     <!--技能学习 - Java语言-->
-    <div class="learnJava hidden">
+    <div class="learnJava  hidden">
         <header class="skillHeader"></header>
         <h3>如何较为快速的入门Java语言</h3>
         <div class="middleLearn">
@@ -1074,9 +1294,26 @@
             <img src="images/军训攻略/军训攻略 文.png" height="1537" width="480"/>
         </div>
     </div>
-
 </div>
 </body>
-
-
+<!--<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="tendina-master/tendina.js"></script>
+<script>
+    $(function () {
+        $('.dropdown').tendina({
+            animate: true,
+            speed: 500,
+            openCallback: function($clickedEl) {
+                console.log($clickedEl);
+            },
+            closeCallback: function($clickedEl) {
+                console.log($clickedEl);
+            }
+        });
+        $(".menu").click(function () {
+            $(".common_Width").addClass("hidden");
+            console.log("123");
+        });
+    })
+</script>
 </html>

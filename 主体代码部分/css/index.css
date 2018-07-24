@@ -4,7 +4,6 @@
     min-width: 320px;
     max-width: 640px;
     margin: 0 auto;
-    cursor: pointer;
 }
 
 .freshman_zone{
@@ -636,7 +635,6 @@
 /*技能学习*/
 .skill_learn{
     width: 100%;
-    height: 55px;
 }
 .skill_header{
     width: 100%;
@@ -644,13 +642,13 @@
     height: 100%;
     box-shadow: 1px 1px 5px;
 }
-.skill_header .skill_icon{
-    width: 47px;
-    height: 45px;
-    position: absolute;
-    background: url(../images/技能学习/left42_01.png)left 15px top 12px no-repeat;
-    background-size: 24px;
-}
+/*.skill_header .skill_icon{*/
+    /*width: 47px;*/
+    /*height: 45px;*/
+    /*position: absolute;*/
+    /*background: url(../images/技能学习/left42_01.png)left 15px top 12px no-repeat;*/
+    /*background-size: 24px;*/
+/*}*/
 .skill_header .learnSkills{
     width: 100%;
 }
@@ -725,20 +723,20 @@
 }
 .recommendWeb .recommendHead p{
     display: block;
-    width: 100%;
-    position: absolute;
-    top: 10px;
-    left: 20px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
     font-size: 13px;
+    margin-left: 15px;
 }
 .recommendWeb .recommendHead span{
     display: block;
     width: 10%;
     background-color: #d8505c;
-    position: absolute;
+    float: left;
     height: 4px;
-    top: 32px;
-    left: 28px;
+    margin-left: -45px;
+    margin-top: 34px;
 }
 .recommendContent{
     width: 100%;
@@ -901,6 +899,131 @@
     color: #CCCCCC;
 }
 
+/*院系概览内容 - 学院*/
+/*通用header*/
+.majorHead{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: #eeeeee;
+}
+.majorHead a{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url(../images/院系概览/arrowhead7.png) left center no-repeat;
+    background-size: 20px 20px;
+}
+.majorHead h3{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+/*院系概览 - 通院*/
+.tongyuan_content {
+    width: 100%;
+}
+.tongyuan_content img{
+    width: 100%;
+}
+/*院系概览 - 电院*/
+.dian_content{
+    width: 100%;
+}
+.dian_content img{
+    width: 100%;
+}
+/*院系概览 - 计软院*/
+.jiruan_content{
+    width: 100%;
+}
+.jiruan_content img{
+    width: 100%;
+}
+/*院系概览 - 自动化*/
+.zidonghua_content{
+    width: 100%;
+}
+.zidonghua_content img{
+    width: 100%;
+}
+/*院系概览 - 材料*/
+.cailiao_content{
+    width: 100%;
+}
+.cailiao_content img{
+    width: 100%;
+}
+/*院系概览 - 物联网*/
+.wulianwang_content{
+    width: 100%;
+}
+.wulianwang_content img{
+    width: 100%;
+}
+/*院系概览 - 理院*/
+.liyuan_content{
+    width: 100%;
+}
+.liyuan_content img{
+    width: 100%;
+}
+/*院系概览 - 地生院*/
+.disheng_content{
+    width: 100%;
+}
+.disheng_content img{
+    width: 100%;
+}
+/*院系概览 - 传媒院*/
+.chuanmei_content{
+    width: 100%;
+}
+.chuanmei_content img{
+    width: 100%;
+}
+/*院系概览 - 管院*/
+.guanyuan_content{
+    width: 100%;
+}
+.guanyuan_content img{
+    width: 100%;
+}
+/*院系概览 - 经院*/
+.jingyuan_content{
+    width: 100%;
+}
+.jingyuan_content img{
+    width: 100%;
+}
+/*院系概览 - 人文院*/
+.renwen_content{
+    width: 100%;
+}
+.renwen_content img{
+    width: 100%;
+}
+/*院系概览 - 外院*/
+.waiyuan_content{
+    width: 100%;
+}
+.waiyuan_content img{
+    width: 100%;
+}
+/*院系概览 - 教科*/
+.jiaoke_content{
+    width: 100%;
+}
+.jiaoke_content img{
+    width: 100%;
+}
+/*院系概览 - 贝院*/
+.beiyuan_content{
+    width: 100%;
+}
+.beiyuan_content img{
+    width: 100%;
+}
 /*学校章程*/
 .college_rule{
     width: 100%;
@@ -991,6 +1114,10 @@
 .yangzhen{
     width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+
 }
 /*王成宽*/
 .wangchengkuan{
@@ -1000,19 +1127,37 @@
 .zhangzhihua{
     width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .zhounanping{
+    width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .wangzongrong{
     width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .liziquan{
+    width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .wanglianhui{
+    width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .imgBox2 img{
     display: block;
@@ -1023,10 +1168,16 @@
 .wangguoping{
     width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .jiangguoping{
     width: 100%;
     cursor: pointer;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .leader1{cursor: pointer}
 .leader2{cursor: pointer}
@@ -1078,9 +1229,10 @@
     width: 100%;
 }
 .skillHeader{
+    position: absolute;
     width: 100%;
     height: 45px;
-    background: url(../images/南邮概况/arrowhead7_01.png) left 10px center no-repeat #1D7AD9;
+    background-color: #4bb1cf;
     background-size: 24px 24px;
     float: left;
     border-bottom: 2px solid #cccccc;
@@ -1090,6 +1242,7 @@
     width: 100%;
     display: block;
     margin: 0 auto;
+    padding-top: 45px;
 }
 
 /*C++的入门*/
@@ -1134,6 +1287,7 @@
 .learnCPP_content ul li{
     width: 100%;
     font-size: 13px;
+    line-height: 20px;
 }
 /*Java学习*/
 .learnJava{
@@ -1153,6 +1307,7 @@
     width: 100%;
     font-size: 13px;
     padding: 0 10px;
+    line-height: 26px;
 }
 .learnJava_content a:hover{
     color: #243D99;
@@ -1181,6 +1336,7 @@
 }
 .learnPython_content ul{
     width: 100%;
+    padding-bottom: 25px;
 }
 .learnPython_content ul a:hover{
     color: #243D99;
@@ -1188,7 +1344,11 @@
 }
 .learnPython_content ul li{
     width: 100%;
+    line-height: 25px;
     padding: 0 10px;
+}
+.learnPython h4{
+    margin: 15px 0;
 }
 
 /*前端学习*/
@@ -1213,6 +1373,7 @@
 .learnUI_content ul li{
     width: 100%;
     padding: 0 10px;
+    line-height: 25px;
 }
 .learnUI_content a:hover{
     color: #243D99;
@@ -1242,6 +1403,7 @@
 }
 .learnDesign_content ul li{
     width: 100%;
+    line-height: 25px;
 }
 .learnDesign_content a:hover{
     color: #243D99;

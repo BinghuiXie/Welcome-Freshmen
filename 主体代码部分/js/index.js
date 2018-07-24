@@ -103,21 +103,20 @@ $(function () {
     PageJump(freshmen_guide,guide3,suggest);
     PageJump(freshmen_guide,guide4,tips);
 });
+
 /*PageJump函数：
 * 第一个参数：需要隐藏的界面；
 * 第二个参数：点击的界面；
 * 第三个参数：需要显示的界面；
 * */
 var PageJump = function (e1,e,e2) {
-    e.bind("touchstart",function () {
+    e.unbind("touchend").on("touchend",function () {
         if (e.cancelable) {
             // 判断默认行为是否已经被禁用
             if (!e.defaultPrevented) {
                 e.preventDefault();
             }
         };
-    });
-    e.bind("touchend",function () {
         console.log("123");
         e1.addClass("hidden");
         e2.removeClass("hidden");
