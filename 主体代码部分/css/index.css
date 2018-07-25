@@ -154,6 +154,8 @@
 
 /*技术支持*/
 .ECLass_tech{
+    width: 100%;
+    height: 30px;
     position: relative;
 }
 .tech_support{
@@ -162,19 +164,11 @@
     width: 100%;
     height: 20px;
     background: url(../images/首页/底部技术支持.png) right center no-repeat;
-    background-size: 50%;
+    background-size: 50% 100%;
 }
 
 
 /*南邮概况*/
-/*!*居中样式*!*/
-/*.overview_njupt{*/
-    /*width: 100%;*/
-    /*min-width: 320px;*/
-    /*max-width: 640px;*/
-    /*margin: 0 auto;*/
-/*}*/
-
 /*头顶标题部分*/
 .headerBar{
     width: 100%;
@@ -329,6 +323,9 @@
 }
 .suo_map{
     cursor: pointer;
+}
+.imgBox3{
+    margin-top: 40px;
 }
 .imgBox3 img{
     width: 90%;
@@ -1041,10 +1038,10 @@
     background-size: 16px 16px;
 }
 .headRule .titleRule{
-    width: 80%;
+    width: 100%;
     text-align: center;
     padding: 8px;
-    text-indent: 1.5em;
+    /*text-indent: 1.5em;*/
 }
 .headRule .lineRule{
     display: block;

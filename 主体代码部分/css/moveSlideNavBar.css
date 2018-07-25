@@ -1,0 +1,48 @@
+.navBarIcon{
+    width: 42px;
+    height: 42px;
+    background: url(../images/首页/导航栏.png) left 15px center no-repeat;
+    background-size: 15px 12px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 999999999;
+}
+.navBarIcon:hover{
+    cursor: pointer;
+}
+@media (min-width: 500px) {
+    .navBarSlide{
+        width: 25vw;
+    }
+}
+.navBarSlide{
+    width: 100%;
+    background-color: #1D7AD9;
+    opacity: 0.9;
+    min-height: 100vh;
+    transform: translate(-100vw,0);
+    position: absolute;
+    z-index: 999999;
+}
+.navBarSlide ul.dropdown{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+.navBarSlide ul li{
+    width: 100%;
+}
+.navBarSlide ul li a{
+    display: block;
+    width: 100%;
+}
+.navBarSlide ul li a:hover{
+    background-color: #cccccc;
+    opacity: 0.5;
+}
+.navBarSlide ul li a h3{
+    height: 35px;
+    line-height: 35px;
+    padding-bottom: 5px;
+}

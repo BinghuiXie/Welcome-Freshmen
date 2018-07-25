@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动导航栏demo</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <style>
+        body,div,img,ol,li,ul,p,h3{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            display: block;
+            color: black;
+            text-decoration: none;
+        }
+        body{
+            /*position: relative;*/
+        }
+        .navBarIcon{
+            width: 42px;
+            height: 42px;
+            background: url(../社团初探/导航栏.png) left 15px center no-repeat;
+            background-size: 12px 12px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+        .navBarIcon:hover{
+            cursor: pointer;
+        }
+        @media (min-width: 500px) {
+            .navBarSlide{
+                width: 25vw;
+            }
+        }
+        .navBarSlide{
+            width: 100%;
+            background-color: #1D7AD9;
+            height: 100vh;
+            transform: translate(-100vw,0);
+            position: absolute;
+        }
+        .navBarSlide ul{
+            width: 100%;
+            text-align: center;
+            margin-top: 10vh;
+        }
+        .navBarSlide ul li{
+            width: 100%;
+        }
+        .navBarSlide ul li a{
+            display: block;
+            width: 100%;
+        }
+        .navBarSlide ul li a:hover{
+            background-color: #cccccc;
+            opacity: 0.5;
+        }
+        .navBarSlide ul li a h3{
+            height: 35px;
+            line-height: 35px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="navDemo" id="page1">
+    <span class="navBarIcon"></span>
+    <div class="navBarSlide">
+        <ul>
+            <li id="l1"><a href="javascript:void (0);" class="link"><h3>南邮概况</h3></a></li>
+            <li id="l2"><a href="#page1" class="link"><h3>新生导航</h3></a></li>
+            <li id="l3"><a href="" class="link"><h3>生活攻略</h3></a></li>
+            <li id="l4"><a href="" class="link"><h3>院系概览</h3></a></li>
+            <li id="l5"><a href="" class="link"><h3>军训攻略</h3></a></li>
+            <li id="l6"><a href="" class="link"><h3>技能学习</h3></a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(".navBarIcon").click(function () {
+            console.log("123");
+            $(".navBarSlide").animate({
+                right: "-100vw"
+            },500);
+        });
+        $(".link").click(function () {
+            $(".navBarSlide").animate({
+                right: "100vw"
+            },500);
+        });
+    });
+</script>
+</body>
+</html>

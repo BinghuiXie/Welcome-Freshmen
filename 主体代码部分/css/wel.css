@@ -220,7 +220,7 @@ menu .drawer-list {
     padding-top: 125px;
     transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
     border-bottom-left-radius: 100vw;
-    background: url(首页封面.png) top -5px center no-repeat;
+
     background-size: 100vw 102vh;
     z-index: 9999;
 }
