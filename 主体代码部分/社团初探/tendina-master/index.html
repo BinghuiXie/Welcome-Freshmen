@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Tendina plugin</title>
+
+
+
+  <link rel="stylesheet" href="css/demo.css">
+
+</head>
+
+  <body>
+
+    <ul class="dropdown">
+
+      <li>
+
+        <a href="#">Menu 1</a>
+
+        <ul>
+
+          <li><a href="#">Submenu 1</a></li>
+
+        </ul>
+
+      </li>
+
+      <li>
+
+        <a href="#">Menu 2</a>
+
+        <ul>
+
+          <li><a href="#">Submenu 2</a></li>
+
+          <li><a href="#">Submenu 2</a></li>
+
+          <li><a href="#">Submenu w/ childrens</a>
+
+            <ul>
+
+              <li>Subsubmenu 2</li>
+
+              <li>Subsubmenu 2</li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li>
+
+        <a href="#">Menu 3</a>
+
+        <ul>
+
+          <li><a href="#">Submenu 3</a></li>
+
+          <li><a href="#">Submenu 3</a></li>
+
+        </ul>
+
+      </li>
+
+    </ul>
+
+
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+    <script src="tendina.js"></script>
+
+    <script>
+
+      $('.dropdown').tendina({
+
+        animate: true,
+
+        speed: 500,
+
+        openCallback: function($clickedEl) {
+
+          console.log($clickedEl);
+
+        },
+
+        closeCallback: function($clickedEl) {
+
+          console.log($clickedEl);
+
+        }
+
+      })
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*父元素设置隐藏*/
+            height: 0;
+            overflow: hidden;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /*子元素不设置隐藏*/
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <h2>父元素</h2>
+    <div class="child">
+            <h3>子元素</h3>
+    </div>
+</div>
+</body>
+</html>
