@@ -57,7 +57,7 @@ $(function () {
     var page51 = $("#page51");
     var page52 = $("#page52");
     var page53 = $("#page53");
-    var page54 = $("#page53");
+    var page54 = $("#page54");
     var page55 = $("#page55");
     var page56 = $("#page56");
     var page57 = $("#page57");
@@ -71,6 +71,7 @@ $(function () {
     var page65 = $("#page65");
     var page66 = $("#page66");
 
+    var nav0 = $("#nav0");
     var nav1 = $("#nav1");
     var nav2 = $("#nav2");
     var nav3 = $("#nav3");
@@ -139,94 +140,129 @@ $(function () {
     var nav66 = $("#nav66");
     var nav67 = $("#nav67");
 
+    navJump(nav2,page2);/*学校简介*/
+    navJump(nav3,page3);/*学校章程*/
+    navJump(nav4,page4);/*南邮校史*/
+   /* navJump(nav7,page2);暂无*//*全景地图*/
 
+    /*现任领导的跳转*/
+    navJump(nav8,page6);
+    navJump(nav9,page7);
+    navJump(nav10,page8);
+    navJump(nav11,page9);
+    navJump(nav12,page10);
+    navJump(nav13,page11);
+    navJump(nav14,page12);
+    navJump(nav15,page13);
+    navJump(nav16,page14);
+    navJump(nav17,page15);
 
-    navJump(page0,nav2,page2);/*学校简介*/
-    navJump(page0,nav3,page3);/*学校章程*/
-    navJump(page0,nav4,page4);/*南邮校史*/
-    navJump(page0,nav6,page16);/*电子地图*/
-   /* navJump(page0,nav7,page2);暂无*//*全景地图*/
-    // navJump(page0,);
-    // navJump(page0,);
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
+    /*电子地图的跳转*/
+    navJump(nav18,page17);
+    navJump(nav19,page18);
+    navJump(nav20,page19);
+
+    /*点击返回首页*/
+    var allPages = $("[type = 'welcome']");
+    for (var i = 0; i < allPages.length; i++){
+        if(typeof(allPages.attr("name"))=="undefined"){
+            /*currentPage是当前浏览界面，日后这个部分还需改进*/
+            var currentPage = allPages[i];
+        }
+    }
+    navJump(nav0,page0);
+
+    /*新生导航跳转*/
+    navJump(nav22,page21);
+    navJump(nav23,page22);
+    navJump(nav24,page23);
+    navJump(nav25,page24);
+
+    /*军训攻略跳转*/
+    navJump(nav60,page66);
+
+    /*生活攻略跳转*/
+    navJump(nav27,page42);
+    navJump(nav28,page43);
+    navJump(nav29,page44);
+    navJump(nav30,page45);
+    navJump(nav31,page46);
+    navJump(nav32,page47);
+    navJump(nav33,page48);
+    navJump(nav34,page49);
+    navJump(nav35,page50);
+    navJump(nav36,page51);
+    navJump(nav37,page52);
+    navJump(nav38,page53);/*新生群*/
+    navJump(nav39,page54);/*心理咨询*/
+    navJump(nav40,page55);
+    navJump(nav41,page56);
+    navJump(nav43,page57);
+    navJump(nav43,page58);
+
+    /*院系概览跳转*/
+    navJump(nav45,page26);
+    navJump(nav46,page27);
+    navJump(nav47,page28);
+    navJump(nav48,page29);
+    navJump(nav49,page30);
+    navJump(nav50,page31);
+    navJump(nav51,page32);
+    navJump(nav52,page33);
+    navJump(nav53,page34);
+    navJump(nav54,page35);
+    navJump(nav55,page36);
+    navJump(nav56,page37);
+    navJump(nav57,page38);
+    navJump(nav58,page39);
+    navJump(nav59,page40);
+
+    /*技能学习跳转*/
+    navJump(nav62,page60);
+    navJump(nav63,page61);
+    navJump(nav64,page62);
+    navJump(nav65,page63);
+    navJump(nav66,page64);
+    navJump(nav67,page65);
 });
-//
+
+
 /*navJump函数：
 *
-*  第一个参数：需要隐藏的界面；
-*  第二个参数：点击的导航上的链接；
-*  第三个参数：要显示的界面；
+*
+*  第一个参数：点击的导航上的链接；
+*  第二个参数：要显示的界面；
+*
 * */
-var navJump = function (e1,e,e2) {
+var navJump = function (e,e2) {
+    var nameMark = $("[name = 'mark']");
+    // console.log(nameMark.length);
     e.click(function () {
-        console.log("bug");
         if (e.cancelable) {
             // 判断默认行为是否已经被禁用
             if (!e.defaultPrevented) {
                 e.preventDefault();
             }
         }
-        console.log("123");
-        e1.addClass("hidden");
+        e2.removeAttr("name");
+        nameMark.addClass("hidden");
+        // console.log(nameMark.length);
+        // console.log(nameMark[0]);
+        // for (var i = 0; i < nameMark.length; i++){
+        //     if (nameMark.hasClass("hidden") == false){
+        //         nameMark[i].addClass("hidden");
+        //     }
+        // }
+        // if(nameMark.hasClass("hidden") == true){
+        //     ;
+        // }else{
+        //     console.log("123");
+        //     nameMark.addClass("hidden");
+        //     console.log("123");
+        // }
         e2.removeClass("hidden");
-        // var drawer = $(".drawer-list");
-        // drawer.addClass("hidden");
+        // e1.addClass("hidden");
+        // e2.removeClass("hidden");
     });
 
 };
