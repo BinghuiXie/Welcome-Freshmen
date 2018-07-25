@@ -1,0 +1,107 @@
+.Visitgroup{
+    width: 100%;
+}
+.group_headerBar{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #999999;
+}
+.group_headerBar a.goback_icon{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: 0;
+    padding: 14px 10px;
+    background-origin: content-box;/*从内容开始平铺*/
+    background-clip: content-box;
+}
+.group_headerBar a img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.group_headerBar .top_middleBar{
+    width: 83%;
+    margin:10px 5px 5px 45px;
+    border: 1px solid #dddddd;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+.top_middleBar .search_icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+.top_middleBar .search_icon img{
+    /*width: 100%;*/
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+.top_middleBar .searchBox{
+    text-indent: 2.3em;
+}
+/*主体容器*/
+/*左侧浮动*/
+.main_container{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+.group_content{
+    width: 80px;
+    height: 100%;
+    float: left;
+}
+.group_content h4{
+    padding-right: -1px;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border-right: 1px solid #cccccc;
+}
+.group_content ul{
+    width: 80px;
+}
+.group_content ul li{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    font-size: 12px;
+    background-color: #eeeeee;
+}
+.group_content ul li:first-child{
+    border-top: 1px solid #CCCCCC;
+}
+.group_content ul li p{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 100%;
+    line-height: 40px;
+}
+.group_content ul li.nowActive{
+    background-color: #1D7AD9;
+    border-right: none;
+}
+.group_content ul li.nowActive p{
+    color: white;
+    font-size: 14px;
+}
+/*右侧内容*/
+/*当前内容*/
+
+
+
+
+
+
+

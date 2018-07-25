@@ -1,0 +1,49 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    font-family: 微软雅黑;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul,ol,li{
+    list-style: none;
+}
+input,textarea{
+    outline: none;
+    border: none;
+    /*不能改变框的大小*/
+    resize: none;
+    -webkit-appearance: none;
+}
+
+
+/*公共样式*/
+.fl{float: left}
+.fr{float: right}
+.oh{overflow: hidden}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.hidden{
+    display: none;
+}
+.commonWidth{
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+}

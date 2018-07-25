@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tendina plugin</title>
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+  <body>
+    <ul class="dropdown">
+      <li>
+        <a href="#" class="firstTitle"><h3>南邮概况</h3></a>
+        <ul>
+          <li><a href="#">学校简介</a></li>
+          <li><a href="#">学校章程</a></li>
+          <li><a href="#">南邮校史</a></li>
+          <li><a href="#">现任领导</a></li>
+          <li><a href="#">电子地图</a></li>
+          <li><a href="#">360°南邮全景地图</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="firstTitle">新生导航</a>
+        <ul>
+          <li><a href="#">报到流程</a></li>
+          <li><a href="#">新生报到推荐单</a></li>
+          <li><a href="#">学长学姐建议</a>
+            <ul>
+              <li>Subsubmenu 2</li>
+              <li>Subsubmenu 2</li>
+            </ul>
+          </li>
+          <li><a href="#">入学小贴士</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="firstTitle">生活攻略</a>
+        <ul>
+          <li><a href="#">衣在南邮</a></li>
+          <li><a href="#">食在南邮</a></li>
+          <li><a href="#">住在南邮</a></li>
+          <li><a href="#">行在南邮</a></li>
+          <li><a href="#">南京天气</a></li>
+          <li><a href="#">周围商区</a></li>
+          <li><a href="#">食堂介绍</a></li>
+          <li><a href="#">宿舍介绍</a></li>
+          <li><a href="#">校车时刻表</a></li>
+          <li><a href="#">南京旅游地点</a></li>
+          <li><a href="#">老乡群</a></li>
+          <li><a href="#">新生群</a></li>
+          <li><a href="#">心理咨询</a></li>
+          <li><a href="#">南邮小程序</a></li>
+          <li><a href="#">教务处</a></li>
+          <li><a href="#">本科招生网</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="" class="firstTitle">院系概览</a>
+          <ul>
+            <li><a href="#">通信与信息工程学院</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+      </li>
+    </ul>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="tendina.js"></script>
+    <script>
+      $('.dropdown').tendina({
+        animate: true,
+        speed: 500,
+        openCallback: function($clickedEl) {
+          console.log($clickedEl);
+        },
+        closeCallback: function($clickedEl) {
+          console.log($clickedEl);
+        }
+      })
+    </script>
+  </body>
+</html>
