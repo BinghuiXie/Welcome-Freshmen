@@ -238,6 +238,7 @@ var navJump = function (e,e2) {
     var nameMark = $("[name = 'mark']");
     // console.log(nameMark.length);
     e.click(function () {
+        alert("123");
         if (e.cancelable) {
             // 判断默认行为是否已经被禁用
             if (!e.defaultPrevented) {
