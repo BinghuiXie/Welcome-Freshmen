@@ -412,6 +412,14 @@ $(function () {
     navJump(page73,page51);
     navJump(page74,page53);
     navJump(page75,page50);
+
+    /*电子地图*/
+    var page76 = $("#page76");
+    var page77 = $("#page77");
+    var page78 = $("#page78");
+    navJump(page76,page17);
+    navJump(page77,page18);
+    navJump(page78,page19);
 });
 
 
