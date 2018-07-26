@@ -24,17 +24,17 @@
     min-width: 320px;
     max-width: 640px;
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
 }
-.top_welcome_NJUPT .top_welcome_NJUPT_box .icon_logo{
-    float: left;
-    width: 60px;
-    height: 50px;
-    top: 5px;
-    left: 0;
-    background: url(../images/首页/左上角小熊.png) left 10px center no-repeat;
-    background-size: 40px 40px;
-}
+/*.top_welcome_NJUPT .top_welcome_NJUPT_box .icon_logo{*/
+    /*float: left;*/
+    /*width: 60px;*/
+    /*height: 50px;*/
+    /*top: 5px;*/
+    /*left: 0;*/
+    /*background: url(../images/首页/左上角小熊.png) left 10px center no-repeat;*/
+    /*background-size: 40px 40px;*/
+/*}*/
 .top_welcome_NJUPT .top_welcome_NJUPT_box .title{
     width: 100%;
     padding-left: 70px;
@@ -69,7 +69,6 @@
     border-radius: 14px;
     padding-left: 10px;
     background-color: rgba(68, 93, 170, 0.46);
-    /*pointer-events: auto;*/
 }
 .welcome_content .box1 a:hover{
     background-color: rgba(68, 93, 170, 0.56);

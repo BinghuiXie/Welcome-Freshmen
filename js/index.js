@@ -398,12 +398,12 @@ function navJump (e,e2) {
     // console.log(nameMark.length);
     e.click(function () {
         // alert("123");
-        if (e.cancelable) {
-            // 判断默认行为是否已经被禁用
-            if (!e.defaultPrevented) {
-                e.preventDefault();
-            }
-        }
+        // if (e.cancelable) {
+        //     // 判断默认行为是否已经被禁用
+        //     if (!e.defaultPrevented) {
+        //         e.preventDefault();
+        //     }
+        // }
         e2.removeAttr("name");
         nameMark.addClass("hidden");
         e2.removeClass("hidden");
