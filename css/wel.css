@@ -25,12 +25,6 @@ ul {
     padding: .25em;
 }
 
-/*menu, menu label {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-/*}*/
-
 menu {
     margin: 0;
 }
@@ -66,135 +60,6 @@ menu input[type=checkbox]:checked + .drawer-list li:nth-child(6) {
 menu input[type=checkbox]:checked + .drawer-list li:nth-child(7) {
     transition: transform 0.5s 0.14s ease;
 }
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(8) {*/
-    /*transition: transform 0.5s 0.16s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(9) {*/
-    /*transition: transform 0.5s 0.18s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(10) {*/
-    /*transition: transform 0.5s 0.2s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(11) {*/
-    /*transition: transform 0.5s 0.22s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(12) {*/
-    /*transition: transform 0.5s 0.24s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(13) {*/
-    /*transition: transform 0.5s 0.26s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(14) {*/
-    /*transition: transform 0.5s 0.28s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(15) {*/
-    /*transition: transform 0.5s 0.3s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(16) {*/
-    /*transition: transform 0.5s 0.32s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(17) {*/
-    /*transition: transform 0.5s 0.34s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(18) {*/
-    /*transition: transform 0.5s 0.36s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(19) {*/
-    /*transition: transform 0.5s 0.38s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(20) {*/
-    /*transition: transform 0.5s 0.4s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(21) {*/
-    /*transition: transform 0.5s 0.42s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(22) {*/
-    /*transition: transform 0.5s 0.44s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(23) {*/
-    /*transition: transform 0.5s 0.46s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(24) {*/
-    /*transition: transform 0.5s 0.48s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(25) {*/
-    /*transition: transform 0.5s 0.5s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(26) {*/
-    /*transition: transform 0.5s 0.52s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(27) {*/
-    /*transition: transform 0.5s 0.54s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(28) {*/
-    /*transition: transform 0.5s 0.56s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(29) {*/
-    /*transition: transform 0.5s 0.58s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(30) {*/
-    /*transition: transform 0.5s 0.6s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(31) {*/
-    /*transition: transform 0.5s 0.62s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(32) {*/
-    /*transition: transform 0.5s 0.64s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(33) {*/
-    /*transition: transform 0.5s 0.66s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(34) {*/
-    /*transition: transform 0.5s 0.68s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(35) {*/
-    /*transition: transform 0.5s 0.7s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(36) {*/
-    /*transition: transform 0.5s 0.72s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(37) {*/
-    /*transition: transform 0.5s 0.74s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(38) {*/
-    /*transition: transform 0.5s 0.76s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(39) {*/
-    /*transition: transform 0.5s 0.78s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(40) {*/
-    /*transition: transform 0.5s 0.8s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(41) {*/
-    /*transition: transform 0.5s 0.82s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(42) {*/
-    /*transition: transform 0.5s 0.84s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(43) {*/
-    /*transition: transform 0.5s 0.86s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(44) {*/
-    /*transition: transform 0.5s 0.88s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(45) {*/
-    /*transition: transform 0.5s 0.9s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(46) {*/
-    /*transition: transform 0.5s 0.92s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(47) {*/
-    /*transition: transform 0.5s 0.94s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(48) {*/
-    /*transition: transform 0.5s 0.96s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(49) {*/
-    /*transition: transform 0.5s 0.98s ease;*/
-/*}*/
-/*menu input[type=checkbox]:checked + .drawer-list li:nth-child(50) {*/
-    /*transition: transform 0.5s 1s ease;*/
-/*}*/
 menu input[type=checkbox]:checked + .drawer-list li a {
     padding-right: 15px;
 }
@@ -209,8 +74,7 @@ menu input[type=checkbox]:checked ~ hamburger > i:after {
     transform: translate(-50%, -50%) rotate(-315deg);
 }
 menu .drawer-list {
-    position: absolute;
-    /*margin-top: 2vh;*/
+    position: fixed;
     height: 100%;
     width: 100vw;
     transform: translate(100vw, 0);

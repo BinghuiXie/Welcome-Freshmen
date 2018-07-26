@@ -575,8 +575,8 @@
     width: 100%;
     color: #FFFFFF;
     text-align: center;
-    line-height: 45px;
-    text-indent: -3em;
+    line-height: 50px;
+    /*text-indent: -2em;*/
 }
 
 .guide_list{
@@ -614,10 +614,12 @@
     color: #FFFFFF;
     background-color: #243D99;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
 }
-.guide_list ul li a h4:nth-child(3n),
-.guide_list ul li a h4:nth-child(4n){
+.guide_list ul li a h4:nth-child(3),
+.guide_list ul li a h4:nth-child(4){
     margin-bottom: 50px;
 }
 
@@ -904,7 +906,7 @@
     background: url(../images/院系概览/arrowhead7.png) left center no-repeat;
     background-size: 20px 20px;
 }
-.majorHead h3{
+.majorHead h3,h4,h5{
     height: 60px;
     line-height: 60px;
     text-align: center;
@@ -1653,6 +1655,13 @@
     width: 50%;
     float: left;
 }
+.bottomChoice ul li img{
+    display: block;
+    position: absolute;
+    width: 12%;
+    height: 55%;
+    left: 18%;
+}
 .bottomChoice ul li p{
     color: #ffffff;
     height: 60px;
@@ -1766,7 +1775,7 @@
     background: url(../images/生活攻略/行在南邮/行在南邮.png)right center no-repeat;
     background-size: 40px 40px;
     right: 10px;
-    top: 13px;
+    top: 2vh;
 }
 .walk_content{
     width: 100%;
@@ -1780,8 +1789,8 @@
     height: 100px;
 }
 .walk_content a.leftLinkPos{
-    margin-left: 58px;
-    margin-top:4px;
+    margin-left: 16vw;
+    margin-top:-3vh;
 }
 .walk_content a.rightLinkPos{
     margin-right: 65px;
@@ -1807,28 +1816,28 @@
 }
 .laoxiang a{
     background: url(../images/生活攻略/行在南邮/对话框_07.png) left center no-repeat;
-    background-size: 230px 112px;
+    background-size: 55.5555555vw 15.2173913vh;
 }
 .trip{
-    padding-top: 8vh;
+    padding-top: 2vh;
 }
 .trip a{
     background: url(../images/生活攻略/行在南邮/对话框_08.png) right center no-repeat;
-    background-size: 230px 112px;
+    background-size: 55.5555555vw 15.2173913vh;
 }
 .xinsheng{
-    padding-top: 8vh;
+    padding-top: 2vh;
 }
 .xinsheng a{
     background: url(../images/生活攻略/行在南邮/对话框_09.png) left center no-repeat;
-    background-size: 230px 112px;
+    background-size: 55.5555555vw 15.2173913vh;
 }
 .schoolBus{
-    padding-top: 8vh;
+    padding-top: 2vh;
 }
 .schoolBus a{
     background: url(../images/生活攻略/行在南邮/对话框_10.png) right center no-repeat;
-    background-size: 230px 112px;
+    background-size: 55.5555555vw 15.2173913vh;
 }
 /*老乡群*/
 .laoxiang_group{
@@ -1842,7 +1851,7 @@
     background: url(../images/生活攻略/行在南邮/老乡群.png)right center no-repeat;
     background-size: 40px 40px;
     right: 10px;
-    top: 13px;
+    top: 5px;
 }
 .LX_content1 h4,p{
     text-align: center;
@@ -1967,7 +1976,7 @@
     background: url(../images/生活攻略/新生群.png)right center no-repeat;
     background-size: 40px 40px;
     right: 10px;
-    top: 13px;
+    top: 5px;
 }
 .fmGroup_content{
     width: 100%;

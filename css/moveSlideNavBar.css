@@ -16,19 +16,38 @@
         width: 25vw;
     }
 }
+/*设置滚动条样式*/
+.navBarSlide::-webkit-scrollbar{
+    width: 1px;
+}
 .navBarSlide{
     width: 100%;
+    height: 100%;
     background-color: #1D7AD9;
     opacity: 0.9;
     min-height: 100vh;
     transform: translate(-100vw,0);
-    position: absolute;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0px;
+    bottom: 0;
     z-index: 999999;
+}
+.restPart1{
+    display: block;
+    height: 15.625vh;
+    width: 100vw;
+}
+.restPart2{
+    display: block;
+    height: 15.625vh;
+    width: 100vw;
 }
 .navBarSlide ul.dropdown{
     width: 100%;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 0vh;
 }
 .navBarSlide ul li{
     width: 100%;

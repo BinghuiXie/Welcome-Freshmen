@@ -384,6 +384,34 @@ $(function () {
     navJump(skills4,page63);
     navJump(skills5,page64);
     navJump(skills6,page65);
+
+    /*生活攻略二层界面的跳转*/
+    var page67 = $("#page67");
+    var page68 = $("#page68");
+    /*南京天气和周围商区*/
+    navJump(page67,page46);
+    navJump(page68,page47);
+
+    /*食在南邮部分跳转*/
+    var page69 = $("#page69");
+    navJump(page69,page57);
+
+    /*住在南邮*/
+    var page70 = $("#page70");
+    var page71 = $("#page71");
+
+    navJump(page70,page49);
+    navJump(page71,page55);
+
+    /*行在南邮跳转*/
+    var page72 = $("#page72");
+    var page73 = $("#page73");
+    var page74 = $("#page74");
+    var page75 = $("#page75");
+    navJump(page72,page52);
+    navJump(page73,page51);
+    navJump(page74,page53);
+    navJump(page75,page50);
 });
 
 
