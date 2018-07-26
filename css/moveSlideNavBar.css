@@ -23,8 +23,8 @@
 .navBarSlide{
     width: 100%;
     height: 100%;
-    background-color: #1D7AD9;
-    opacity: 0.9;
+    background-color: rgba(29,122,217,0.75);
+    /*opacity: 0.5;*/
     min-height: 100vh;
     transform: translate(-100vw,0);
     position: fixed;
