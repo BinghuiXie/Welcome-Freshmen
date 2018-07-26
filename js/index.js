@@ -1,6 +1,6 @@
 //
 $(function () {
-    FastClick.attach(document.body);
+    // FastClick.attach(document.body);
 
     /*用于获取首页事件的变量*/
     var page0 = $("#page0");
@@ -384,39 +384,6 @@ $(function () {
     navJump(skills4,page63);
     navJump(skills5,page64);
     navJump(skills6,page65);
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-    // navJump();
-
-
-
-
 });
 
 
@@ -426,7 +393,7 @@ $(function () {
 *  第二个参数：要显示的界面；
 *
 * */
-var navJump = function (e,e2) {
+function navJump (e,e2) {
     var nameMark = $("[name = 'mark']");
     // console.log(nameMark.length);
     e.click(function () {
@@ -443,7 +410,7 @@ var navJump = function (e,e2) {
         // e1.addClass("hidden");
         // e2.removeClass("hidden");
     });
-};
+}
 
 
 //
