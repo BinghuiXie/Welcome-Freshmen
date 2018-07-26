@@ -1201,7 +1201,7 @@
     width: 100%;
     text-align: center;
     padding-top: 15px;
-    text-indent: -3em;
+    /*text-indent: -3em;*/
 }
 .militaryBar{
     width: 45px;
