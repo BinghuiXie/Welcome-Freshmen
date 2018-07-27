@@ -446,20 +446,20 @@ function navJump (e,e2) {
         // e1.addClass("hidden");
         // e2.removeClass("hidden");
     });
-    if(window.history && window.history.pushState) {
-        $(window).on('popstate', function () {
-            var hashLocation = location.hash;
-            var hashSplit = hashLocation.split("#!/");
-            var hashName = hashSplit[1];
-            if (hashName !== '') {
-                var hash = window.location.hash;
-                if (hash === '') {
-                    alert("你点击了返回键");
-                }
-            }
-        });
-        window.history.pushState('forward', null, './#forward');
-    }
+    // if(window.history && window.history.pushState) {
+    //     $(window).on('popstate', function () {
+    //         var hashLocation = location.hash;
+    //         var hashSplit = hashLocation.split("#!/");
+    //         var hashName = hashSplit[1];
+    //         if (hashName !== '') {
+    //             var hash = window.location.hash;
+    //             if (hash === '') {
+    //                 alert("你点击了返回键");
+    //             }
+    //         }
+    //     });
+    //     window.history.pushState('forward', null, './#forward');
+    // }
     }
 
 
