@@ -5,6 +5,7 @@
 #bonfire-pageloader {
 	background:url("../首页封面.png")no-repeat;
 	background-size: 100vw 100vh;
+	z-index: 99999999999999999999999999;
 }
 /* loading icon color */
 #bonfire-pageloader svg {
