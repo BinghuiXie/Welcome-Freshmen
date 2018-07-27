@@ -21,40 +21,36 @@ window.scrollTo(scrollPosition[0], scrollPosition[1]);
 <!-- END DISABLE BROWSER SCROLL -->
 
 <!-- BEGIN LOADER FADE-OUT AND HTML SLIDE-DOWN -->
-jQuery(window).load(function() {	
+setTimeout(function(){
+/* fade out the loading icon */
+jQuery(".bonfire-pageloader-icon").addClass('bonfire-pageloader-icon-hide');
+},500);
 
-	setTimeout(function(){
-	/* fade out the loading icon */
-	jQuery(".bonfire-pageloader-icon").addClass('bonfire-pageloader-icon-hide');
-	},500);
+/* after 250ms delay, restore browser scroll + fade out loader background + slide down page */
+setTimeout(function(){
 
-	/* after 250ms delay, restore browser scroll + fade out loader background + slide down page */
-	setTimeout(function(){
+	/* enable browser scroll on touch devices */
+	jQuery(document.body).unbind('touchmove');
 
-		/* enable browser scroll on touch devices */
-		jQuery(document.body).unbind('touchmove');
+	/* enable browser scroll on desktop */
+	var html = jQuery('html');
+	var scrollPosition = html.data('scroll-position');
+	html.css('overflow', html.data('previous-overflow'));
+	window.scrollTo(scrollPosition[0], scrollPosition[1]);
 
-		/* enable browser scroll on desktop */
-		var html = jQuery('html');
-		var scrollPosition = html.data('scroll-position');
-		html.css('overflow', html.data('previous-overflow'));
-		window.scrollTo(scrollPosition[0], scrollPosition[1]);
+	/* fade out loader */
+	jQuery("#bonfire-pageloader").addClass('bonfire-pageloader-fade');
 
-		/* fade out loader */
-		jQuery("#bonfire-pageloader").addClass('bonfire-pageloader-fade');
+	/* slide down html */
+	jQuery("html").removeClass('bonfire-html-onload');
 
-		/* slide down html */
-		jQuery("html").removeClass('bonfire-html-onload');
+},750);
 
-	},750);
-	
-	/* after 1000ms delay, hide (not fade out) loader*/
-	setTimeout(function(){
+/* after 1000ms delay, hide (not fade out) loader*/
+setTimeout(function(){
 
-	/* hide loader after fading out*/
-		jQuery("#bonfire-pageloader").addClass('bonfire-pageloader-hide');
+/* hide loader after fading out*/
+	jQuery("#bonfire-pageloader").addClass('bonfire-pageloader-hide');
 
-	},1500);
-	
-});
+},1500);
 <!-- END LOADER FADE-OUT AND HTML SLIDE-DOWN -->
