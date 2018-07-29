@@ -147,7 +147,7 @@ window.onload = function () {
     pushHistory();
     pushHistory();
     window.addEventListener("popstate",function (ev) {
-        window.history.back();
+        window.history.go(this.url)
     },false);
 };
 function pushHistory(e) {
