@@ -201,7 +201,7 @@
     </div>
 
 </div>
-<div class="common_Width ">
+<div class="common_Width hidden">
     <!--首页-->
     <!--轮播切换序号 1-10表示首页部分-->
     <div class="freshman_zone common_Width" type="welcome" name="mark" id="page0" href="freshman_zone.html">
@@ -1519,9 +1519,6 @@
     }
     fun();
     function isHide() {
-        if ($("#bonfire-pageloader").hasClass("bonfire-pageloader-hide") == false){
-            $(".common_Width").addClass("hidden");
-        }
         var timer = setInterval(function () {
             if ($("#bonfire-pageloader").hasClass("bonfire-pageloader-hide") == true){
                 $(".common_Width").removeClass("hidden");
